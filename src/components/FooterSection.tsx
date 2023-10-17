@@ -24,7 +24,7 @@ const FooterSection = () => {
         </div>
         <div className="social-links flex justify-center items-center mt-10">
           {socialMediaLinks.map((sl) => (
-            <Link href={sl.link}>
+            <Link href={sl.link} key={sl.link}>
               <Image
                 src={`/${sl.svg}.svg`}
                 alt={sl.title}
@@ -45,15 +45,15 @@ const FooterSection = () => {
         </div>
         <div className="content flex flex-col justify-start items-start">
           <div className="text-white flex justify-start items-center mb-2 cursor-pointer">
-            <span className="material-symbols-outlined mr-4">location_on</span>
+            <span className="material-symbols-outlined mr-2">location_on</span>
             Nairobi Kenya.
           </div>
-          <div className="text-white flex justify-start items-center mb-2 cursor-pointer">
-            <span className="material-symbols-outlined mr-4">mail</span>
+          <div className="text-white flex justify-start items-center mb-2 cursor-pointer text-clip">
+            <span className="material-symbols-outlined mr-2">mail</span>
             plonktaminsurance@gmail.com
           </div>
           <div className="text-white flex justify-start items-center mb-2 cursor-pointer">
-            <span className="material-symbols-outlined mr-4">call</span>
+            <span className="material-symbols-outlined mr-2">call</span>
             0742544580/0786970714
           </div>
         </div>

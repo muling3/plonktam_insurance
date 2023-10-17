@@ -31,7 +31,7 @@ const Navbar = () => {
       </div>
       <div className="menu relative">
         <div
-          className="menu-icon cursor-pointer border rounded-lg p-2 w-full"
+          className="menu-icon cursor-pointer w-full"
           onClick={openMenuItemsModal}
         >
           <Image
