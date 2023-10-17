@@ -24,7 +24,7 @@ const FooterSection = () => {
         </div>
         <div className="social-links flex justify-center items-center mt-10">
           {socialMediaLinks.map((sl) => (
-            <Link href={sl.link} key={sl.link}>
+            <Link href={sl.link} key={sl.svg}>
               <Image
                 src={`/${sl.svg}.svg`}
                 alt={sl.title}
