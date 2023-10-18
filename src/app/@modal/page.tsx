@@ -30,9 +30,9 @@ const Modal: FC<{ cat: string; title: string }> = ({ cat, title }) => {
           <p className="text-lg text-center font-semibold uppercase">{title}</p>
         </div>
         <div className="opts w-full">
-          <div className="card-opt transition-all duration-500 m-3 p-3 rounded-md bg-[#007A37] text-white flex flex-col items-start justify-start cursor-pointer">
+          <div className="card-opt transition-all duration-500 m-3 p-3 rounded-md text-white flex flex-col items-start justify-start cursor-pointer">
             <div
-              className="header flex items-center justify-start"
+              className="header bg-[#007A37] flex items-center justify-start w-full py-2 rounded-lg "
               onClick={toggleAccordion}
             >
               <div className="text-center">
@@ -50,14 +50,29 @@ const Modal: FC<{ cat: string; title: string }> = ({ cat, title }) => {
               className={`body transition-all duration-300 bg-white text-gray-600 overflow-hidden ${
                 accOpen ? "h-96" : "h-0"
               }`}
+            ></div>
+          </div>
+          <div className="card-opt transition-all duration-500 m-3 p-3 rounded-md text-white flex flex-col items-start justify-start cursor-pointer">
+            <div
+              className="header bg-[#007A37] flex items-center justify-start w-full py-2 rounded-lg "
+              onClick={toggleAccordion}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsum,
-              explicabo aut iste a expedita vero quae rerum saepe mollitia
-              temporibus debitis odio quidem, modi excepturi ipsam sapiente id.
-              Amet molestias nihil assumenda voluptatem dolores similique,
-              ratione quam corporis, optio, in aperiam sapiente corrupti
-              exercitationem rerum consequatur temporibus voluptate doloremque?
+              <div className="text-center">
+                <span
+                  className={`material-symbols-outlined mr-2 transition-all duration-500 ${
+                    accOpen ? "rotate-90" : "rotate-0"
+                  }`}
+                >
+                  chevron_right
+                </span>
+              </div>
+              <div>PRIVATE THIRD PARTY MOTOR RATES AND PRICING(ANNUAL)</div>
             </div>
+            <div
+              className={`body transition-all duration-300 bg-yellow-200 text-gray-600 overflow-hidden ${
+                accOpen ? "h-96" : "h-0"
+              }`}
+            ></div>
           </div>
         </div>
       </div>
