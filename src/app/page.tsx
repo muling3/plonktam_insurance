@@ -7,14 +7,9 @@ import HomeSection from "@/components/HomeSection";
 import Navbar from "@/components/Navbar";
 
 import { useSearchParams } from "next/navigation";
-import Modal from "@/app/@modal/page";
 import { ServiceCardProps } from "@/components/ServiceCard";
 
 export default function Home() {
-  const params = useSearchParams();
-
-  console.log("serchParams", params.get("service"));
-
   const services: ServiceCardProps[] = [
     {
       title: "Private Vehicles",
@@ -63,40 +58,23 @@ export default function Home() {
   ];
 
   return (
-    <>
-      {params.get("service") && (
-        <main>
-          <Modal
-            cat={params.get("service") || ""}
-            title={services.filter((svc) => svc.cat == params.get("service"))[0].title}
-          />
-        </main>
-      )}
-
-      <main className="flex min-h-screen flex-col items-center justify-between relative">
-        {/* overlay for modal start */}
-        {params.get("service") && (
-          <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-20 z-30"></div>
-        )}
-        {/* overlay for modal end */}
-
-        <div className="relative">
-          <Navbar />
-        </div>
-        <section className="mt-24"></section>
-        <section id="home">
-          <HomeSection services={services} />
-        </section>
-        <section id="about">
-          <AboutUs />
-        </section>
-        <section className="w-full" id="contact">
-          <ContactSection />
-        </section>
-        <section className="w-full" id="footer">
-          <FooterSection />
-        </section>
-      </main>
-    </>
+    <main className="flex min-h-screen flex-col items-center justify-between relative">
+      <div className="relative">
+        <Navbar />
+      </div>
+      <section className="mt-24"></section>
+      <section id="home">
+        <HomeSection services={services} />
+      </section>
+      <section id="about">
+        <AboutUs />
+      </section>
+      <section className="w-full" id="contact">
+        <ContactSection />
+      </section>
+      <section className="w-full" id="footer">
+        <FooterSection />
+      </section>
+    </main>
   );
 }
