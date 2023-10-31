@@ -1,0 +1,1105 @@
+{
+    "services": [
+        {
+            "privateVehicles": {
+                "thirdParty": {
+                    "title": "Private third party motor rates and pricing(annual)",
+                    "insurances": [
+                        {
+                            "name": "trident",
+                            "price": 4950
+                        },
+                        {
+                            "name": "amaco",
+                            "price": 6500
+                        },
+                        {
+                            "name": "cic",
+                            "price": 7574
+                        },
+                        {
+                            "name": "directLine",
+                            "price": 8450
+                        },
+                        {
+                            "name": "monarch",
+                            "price": 7000
+                        },
+                        {
+                            "name": "jubilee",
+                            "price": 12000
+                        },
+                        {
+                            "name": "orient",
+                            "price": 7574
+                        }
+                    ]
+                },
+                "comprehensive": {
+                    "title": "private comprehensive motor rates and pricing(annual)",
+                    "category": "Value of the Vehicle Insured",
+                    "insurances": [
+                        {
+                            "name": "amaco",
+                            "options": [
+                                {
+                                    "name": "Below Ksh.500,000",
+                                    "price": 38000
+                                },
+                                {
+                                    "name": "Ksh.500,000 To Ksh.1.5M",
+                                    "price": 35000
+                                },
+                                {
+                                    "name": "Ksh.1.5 To Ksh.3M",
+                                    "price": 34000
+                                },
+                                {
+                                    "name": "Ksh.3M and Above",
+                                    "price": 38000
+                                }
+                            ]
+                        },
+                        {
+                            "name": "directLine",
+                            "options": [
+                                {
+                                    "name": "Minimum Ksh. 750,000",
+                                    "price": 60000
+                                }
+                            ]
+                        },
+                        {
+                            "name": "monarch",
+                            "options": [
+                                {
+                                    "name": "Ksh.500,000 To Ksh.1M",
+                                    "price": 40000
+                                },
+                                {
+                                    "name": "Ksh.500,000 To Ksh.2M",
+                                    "price": 39000
+                                },
+                                {
+                                    "name": "Over Ksh. 2.5M",
+                                    "price": 40000
+                                }
+                            ]
+                        },
+                        {
+                            "name": "orient",
+                            "options": [
+                                {
+                                    "name": "Ksh.500,000 To Ksh.1M",
+                                    "price": 42000
+                                },
+                                {
+                                    "name": "Ksh.1M To Ksh.2M",
+                                    "price": 40000
+                                },
+                                {
+                                    "name": "Ksh.2M To Ksh.3M",
+                                    "price": 38000
+                                },
+                                {
+                                    "name": "Over Ksh. 3M",
+                                    "price": 40000
+                                }
+                            ]
+                        },
+                        {
+                            "name": "trident",
+                            "options": [
+                                {
+                                    "name": "Below Ksh.1M upto 15 Years",
+                                    "price": 30000
+                                },
+                                {
+                                    "name": "Below Ksh.1M upto 16 - 20 Years",
+                                    "price": 30000
+                                },
+                                {
+                                    "name": "Above Ksh. 1M upto 15 Years",
+                                    "price": 30000
+                                },
+                                {
+                                    "name": "Above Ksh.1M upto 16 - 20 Years",
+                                    "price": 30000
+                                }
+                            ]
+                        },
+                        {
+                            "name": "jubilee",
+                            "options": [
+                                {
+                                    "name": "Ksh.500,000 To Ksh.1M",
+                                    "price": 45000
+                                },
+                                {
+                                    "name": "Ksh.1 To Ksh.1.5M",
+                                    "price": 67000
+                                },
+                                {
+                                    "name": "Over Ksh. 2.5M",
+                                    "price": "Request a Quotation"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "jubilee",
+                            "options": [
+                                {
+                                    "name": "Ksh.500,000 To Ksh.1M",
+                                    "price": 45000
+                                },
+                                {
+                                    "name": "Ksh.1 To Ksh.1.5M",
+                                    "price": 67000
+                                },
+                                {
+                                    "name": "Over Ksh. 2.5M",
+                                    "price": "Request a Quotation"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "cic",
+                            "options": []
+                        },
+                        {
+                            "name": "occidental",
+                            "options": []
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "lorries": {
+                "thirdParty": {
+                    "title": "lorries third rates(annual)",
+                    "category": "Tonnes of the Lorry",
+                    "insurances": [
+                        {
+                            "name": "amaco",
+                            "options": [
+                                {
+                                    "name": "1 to 3 tonnes",
+                                    "price": 5000
+                                },
+                                {
+                                    "name": "4 to 8 tonnes",
+                                    "price": 6100
+                                },
+                                {
+                                    "name": "9 to 12 tonnes",
+                                    "price": 7400
+                                },
+                                {
+                                    "name": "13 to 15 tonnes",
+                                    "price": 8800
+                                },
+                                {
+                                    "name": "16 to 20 tonnes",
+                                    "price": 12000
+                                },
+                                {
+                                    "name": "Above 20 tonnes",
+                                    "price": 17500
+                                }
+                            ]
+                        },
+                        {
+                            "name": "directLine",
+                            "options": []
+                        }
+                    ]
+                },
+                "comprehensive": {
+                    "title": "lorries comprehensive rates(annual)",
+                    "category": "Value of the Lorry Insured",
+                    "insurances": [
+                        {
+                            "name": "amaco",
+                            "options": [
+                                {
+                                    "name": "Below Ksh.1M upto 15 Years",
+                                    "price": 38000
+                                },
+                                {
+                                    "name": "Below Ksh.1M upto 16 - 20 Years",
+                                    "price": 38000
+                                },
+                                {
+                                    "name": "Above Ksh. 1M upto 15 Years",
+                                    "price": 38000
+                                },
+                                {
+                                    "name": "Above Ksh.1M upto 16 - 20 Years",
+                                    "price": 40000
+                                }
+                            ]
+                        },
+                        {
+                            "name": "directLine",
+                            "options": [
+                                {
+                                    "name": "Below Ksh.500,000 (MANDATORY EVALUATION)",
+                                    "price": 45000
+                                },
+                                {
+                                    "name": "Ksh.500,000 to 1M",
+                                    "price": 50000
+                                },
+                                {
+                                    "name": "Above Ksh. 2.5M",
+                                    "price": 40000
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "psvMatatus": {
+                "thirdParty": {
+                    "title": "psv matatu short periods",
+                    "category": "Seaters",
+                    "insurances": [
+                        {
+                            "name": "amaco",
+                            "options": [
+                                {
+                                    "name": "24 Seaters",
+                                    "durations": [
+                                        {
+                                            "name": "1 Month",
+                                            "price": 9005
+                                        },
+                                        {
+                                            "name": "14 Days",
+                                            "price": 6350
+                                        },
+                                        {
+                                            "name": "7 Days",
+                                            "price": 3700
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "25 Seaters",
+                                    "durations": [
+                                        {
+                                            "name": "1 Month",
+                                            "price": 9005
+                                        },
+                                        {
+                                            "name": "14 Days",
+                                            "price": 6350
+                                        },
+                                        {
+                                            "name": "7 Days",
+                                            "price": 3700
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "33 Seaters",
+                                    "durations": [
+                                        {
+                                            "name": "1 Month",
+                                            "price": 11450
+                                        },
+                                        {
+                                            "name": "14 Days",
+                                            "price": 6200
+                                        },
+                                        {
+                                            "name": "7 Days",
+                                            "price": 3600
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "37 Seaters",
+                                    "durations": [
+                                        {
+                                            "name": "1 Month",
+                                            "price": 20980
+                                        },
+                                        {
+                                            "name": "14 Days",
+                                            "price": 11850
+                                        },
+                                        {
+                                            "name": "7 Days",
+                                            "price": 6900
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "41 Seaters",
+                                    "durations": [
+                                        {
+                                            "name": "1 Month",
+                                            "price": 22940
+                                        },
+                                        {
+                                            "name": "14 Days",
+                                            "price": 12650
+                                        },
+                                        {
+                                            "name": "7 Days",
+                                            "price": 9100
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "42 Seaters",
+                                    "durations": [
+                                        {
+                                            "name": "1 Month",
+                                            "price": 23440
+                                        },
+                                        {
+                                            "name": "14 Days",
+                                            "price": 15850
+                                        },
+                                        {
+                                            "name": "7 Days",
+                                            "price": 9250
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "directline",
+                            "options": [
+                                {
+                                    "name": "24 Seaters",
+                                    "durations": [
+                                        {
+                                            "name": "1 Month",
+                                            "price": 9005
+                                        },
+                                        {
+                                            "name": "14 Days",
+                                            "price": 6350
+                                        },
+                                        {
+                                            "name": "7 Days",
+                                            "price": 3700
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "25 Seaters",
+                                    "durations": [
+                                        {
+                                            "name": "1 Month",
+                                            "price": 9005
+                                        },
+                                        {
+                                            "name": "14 Days",
+                                            "price": 6350
+                                        },
+                                        {
+                                            "name": "7 Days",
+                                            "price": 3700
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "33 Seaters",
+                                    "durations": [
+                                        {
+                                            "name": "1 Month",
+                                            "price": 11450
+                                        },
+                                        {
+                                            "name": "14 Days",
+                                            "price": 6200
+                                        },
+                                        {
+                                            "name": "7 Days",
+                                            "price": 3600
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "37 Seaters",
+                                    "durations": [
+                                        {
+                                            "name": "1 Month",
+                                            "price": 20980
+                                        },
+                                        {
+                                            "name": "14 Days",
+                                            "price": 11850
+                                        },
+                                        {
+                                            "name": "7 Days",
+                                            "price": 6900
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "41 Seaters",
+                                    "durations": [
+                                        {
+                                            "name": "1 Month",
+                                            "price": 22940
+                                        },
+                                        {
+                                            "name": "14 Days",
+                                            "price": 12650
+                                        },
+                                        {
+                                            "name": "7 Days",
+                                            "price": 9100
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "42 Seaters",
+                                    "durations": [
+                                        {
+                                            "name": "1 Month",
+                                            "price": 23440
+                                        },
+                                        {
+                                            "name": "14 Days",
+                                            "price": 15850
+                                        },
+                                        {
+                                            "name": "7 Days",
+                                            "price": 9250
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "xplico",
+                            "options": [
+                                {
+                                    "name": "24 Seaters",
+                                    "durations": [
+                                        {
+                                            "name": "1 Month",
+                                            "price": 9005
+                                        },
+                                        {
+                                            "name": "14 Days",
+                                            "price": 6350
+                                        },
+                                        {
+                                            "name": "7 Days",
+                                            "price": 3700
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "25 Seaters",
+                                    "durations": [
+                                        {
+                                            "name": "1 Month",
+                                            "price": 9005
+                                        },
+                                        {
+                                            "name": "14 Days",
+                                            "price": 6350
+                                        },
+                                        {
+                                            "name": "7 Days",
+                                            "price": 3700
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "33 Seaters",
+                                    "durations": [
+                                        {
+                                            "name": "1 Month",
+                                            "price": 11450
+                                        },
+                                        {
+                                            "name": "14 Days",
+                                            "price": 6200
+                                        },
+                                        {
+                                            "name": "7 Days",
+                                            "price": 3600
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "37 Seaters",
+                                    "durations": [
+                                        {
+                                            "name": "1 Month",
+                                            "price": 20980
+                                        },
+                                        {
+                                            "name": "14 Days",
+                                            "price": 11850
+                                        },
+                                        {
+                                            "name": "7 Days",
+                                            "price": 6900
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "41 Seaters",
+                                    "durations": [
+                                        {
+                                            "name": "1 Month",
+                                            "price": 22940
+                                        },
+                                        {
+                                            "name": "14 Days",
+                                            "price": 12650
+                                        },
+                                        {
+                                            "name": "7 Days",
+                                            "price": 9100
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "42 Seaters",
+                                    "durations": [
+                                        {
+                                            "name": "1 Month",
+                                            "price": 23440
+                                        },
+                                        {
+                                            "name": "14 Days",
+                                            "price": 15850
+                                        },
+                                        {
+                                            "name": "7 Days",
+                                            "price": 9250
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "comprehensive": {
+                    "title": "psv matatu annual",
+                    "category": "Seaters",
+                    "insurances": [
+                        {
+                            "name": "amaco",
+                            "options": [
+                                {
+                                    "name": "14 Seats",
+                                    "price": 77500
+                                },
+                                {
+                                    "name": "24 Seats",
+                                    "price": 103800
+                                },
+                                {
+                                    "name": "25 Seats",
+                                    "price": 106420
+                                },
+                                {
+                                    "name": "33 Seats",
+                                    "price": 134952
+                                },
+                                {
+                                    "name": "37 Seats",
+                                    "price": 171252
+                                },
+                                {
+                                    "name": "41 Seats",
+                                    "price": 186200
+                                },
+                                {
+                                    "name": "42 Seats",
+                                    "price": 189120
+                                }
+                            ]
+                        },
+                        {
+                            "name": "directLine",
+                            "options": [
+                                {
+                                    "name": "14 Seats",
+                                    "price": 100500
+                                },
+                                {
+                                    "name": "24 Seats",
+                                    "price": 125800
+                                },
+                                {
+                                    "name": "25 Seats",
+                                    "price": 129420
+                                },
+                                {
+                                    "name": "33 Seats",
+                                    "price": 173952
+                                },
+                                {
+                                    "name": "37 Seats",
+                                    "price": 229252
+                                },
+                                {
+                                    "name": "41 Seats",
+                                    "price": 251200
+                                },
+                                {
+                                    "name": "42 Seats",
+                                    "price": 256120
+                                }
+                            ]
+                        },
+                        {
+                            "name": "xplico",
+                            "options": [
+                                {
+                                    "name": "14 Seats",
+                                    "price": 73200
+                                },
+                                {
+                                    "name": "18 Seats",
+                                    "price": 94300
+                                },
+                                {
+                                    "name": "25 Seats",
+                                    "price": 98420
+                                },
+                                {
+                                    "name": "33 Seats",
+                                    "price": 121952
+                                },
+                                {
+                                    "name": "37 Seats",
+                                    "price": 151252
+                                },
+                                {
+                                    "name": "41 Seats",
+                                    "price": 181200
+                                }
+                            ]
+                        },
+                        {
+                            "name": "amaco",
+                            "options": [
+                                {
+                                    "name": "14 Seats",
+                                    "price": 86980
+                                },
+                                {
+                                    "name": "18 Seats",
+                                    "price": 99980
+                                },
+                                {
+                                    "name": "26 Seats",
+                                    "price": 121420
+                                },
+                                {
+                                    "name": "33 Seats",
+                                    "price": 136952
+                                },
+                                {
+                                    "name": "37 Seats",
+                                    "price": 193252
+                                },
+                                {
+                                    "name": "41 Seats",
+                                    "price": 209738
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "schoolBuses": {
+                "thirdParty": {
+                    "title": "school rates third party(annual)",
+                    "category": "No of Passengers",
+                    "insurances": [
+                        {
+                            "name": "amaco",
+                            "options": [
+                                {
+                                    "name": "All School buses and Vans",
+                                    "price": "Ksh. 8500 + (400 each pupil)"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "trident",
+                            "options": [
+                                {
+                                    "name": "0 To 15 Passengers",
+                                    "price": "Ksh. 9000 + (500 each pupil)"
+                                },
+                                {
+                                    "name": "15 To 25 Passengers",
+                                    "price": "Ksh. 10500 + (500 each pupil)"
+                                },
+                                {
+                                    "name": "25 Passengers and Above",
+                                    "price": "Ksh. 13000 + (500 each pupil)"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "comprehensive": {
+                    "title": "school buses comprehensive rate(annual)",
+                    "category": "Value of the School bus Insured",
+                    "insurances": [
+                        {
+                            "name": "amaco",
+                            "options": [
+                                {
+                                    "name": "Below Ksh.1M upto 15 Years",
+                                    "price": 45000
+                                },
+                                {
+                                    "name": "Below Ksh.1M upto 16 - 20 Years",
+                                    "price": 45000
+                                },
+                                {
+                                    "name": "Above Ksh.1M upto 15 Years",
+                                    "price": 43000
+                                },
+                                {
+                                    "name": "Above Ksh.1M upto 16 - 20 Years",
+                                    "price": 43000
+                                }
+                            ]
+                        },
+                        {
+                            "name": "trident",
+                            "options": [
+                                {
+                                    "name": "All School buses and Vans",
+                                    "price": "4.5% of the Value of the vehicle"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "commercialTuktuks": {
+                "thirdParty": {
+                    "title": "commercial tuktuk third party rates(annual)",
+                    "insurances": [
+                        {
+                            "name": "trident",
+                            "price": 3850
+                        },
+                        {
+                            "name": "monarch",
+                            "price": 5300
+                        },
+                        {
+                            "name": "amaco",
+                            "price": 5000
+                        }
+                    ]
+                },
+                "comprehensive": {
+                    "title": "commercial tuktuk comprehensive rates(annual)",
+                    "insurances": [
+                        {
+                            "name": "trident",
+                            "price": 8000
+                        },
+                        {
+                            "name": "monarch",
+                            "price": 22500
+                        },
+                        {
+                            "name": "amaco",
+                            "price": 10000
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "psvTuktuks": {
+                "thirdParty": {
+                    "title": "psv tuktuk third party rates(annual)",
+                    "insurances": [
+                        {
+                            "name": "trident",
+                            "price": 7000
+                        },
+                        {
+                            "name": "monarch",
+                            "price": 8500
+                        }
+                    ]
+                },
+                "comprehensive": {
+                    "title": "psv tuktuk comprehensive rates(annual)",
+                    "insurances": [
+                        {
+                            "name": "trident",
+                            "price": 15000
+                        },
+                        {
+                            "name": "monarch",
+                            "price": 22500
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "psvBodaboda": {
+                "thirdParty": {
+                    "title": "psv boda boda third party rates(annual)",
+                    "insurances": [
+                        {
+                            "name": "trident",
+                            "price": 3700
+                        },
+                        {
+                            "name": "directLine",
+                            "price": 4500
+                        }
+                    ]
+                },
+                "comprehensive": {
+                    "title": "psv boda boda comprehensive rates(annual)",
+                    "insurances": [
+                        {
+                            "name": "trident",
+                            "price": 7000
+                        },
+                        {
+                            "name": "monarch",
+                            "price": 6900
+                        },
+                        {
+                            "name": "directLine",
+                            "price": 7000
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "psvMotorcycle": {
+                "thirdParty": {
+                    "title": "private motorcycle third party rates(annual)",
+                    "insurances": [
+                        {
+                            "name": "trident",
+                            "price": 3700
+                        },
+                        {
+                            "name": "heritage",
+                            "price": 3500
+                        },
+                        {
+                            "name": "monarch",
+                            "price": 4200
+                        },
+                        {
+                            "name": "directLine",
+                            "price": 3700
+                        }
+                    ]
+                },
+                "comprehensive": {
+                    "title": "psv boda boda comprehensive rates(annual)",
+                    "insurances": []
+                }
+            }
+        },
+        {
+            "commercialPickups": {
+                "thirdParty": {
+                    "title": "commercial pickups third party rates(annual)",
+                    "category": "Tonnes of the Pickup Insured",
+                    "insurances": [
+                        {
+                            "name": "amaco",
+                            "options": [
+                                {
+                                    "name": "I Tonnes To 3 Tonnes",
+                                    "price": 5500
+                                },
+                                {
+                                    "name": "4 Tonnes To 8 Tonnes",
+                                    "price": 6100
+                                }
+                            ]
+                        },
+                        {
+                            "name": "trident",
+                            "options": [
+                                {
+                                    "name": "0 Tonnes To 3 Tonnes",
+                                    "price": 5950
+                                },
+                                {
+                                    "name": "3 Tonnes To 6 Tonnes",
+                                    "price": 8500
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "comprehensive": {
+                    "title": "commercial pickups comprehensive rates(annual)",
+                    "category": "Value of the Pickup Insured",
+                    "insurances": [
+                        {
+                            "name": "amaco",
+                            "options": [
+                                {
+                                    "name": "Below Ksh. 1M",
+                                    "price": 37000
+                                },
+                                {
+                                    "name": "Above Ksh. 1M",
+                                    "price": 40000
+                                }
+                            ]
+                        },
+                        {
+                            "name": "trident",
+                            "options": [
+                                {
+                                    "name": "Below Ksh.1M upto 15 Years",
+                                    "price": 38000
+                                },
+                                {
+                                    "name": "Below Ksh.1M upto 16 - 20 Years",
+                                    "price": 38000
+                                },
+                                {
+                                    "name": "Above Ksh.1M upto 15 Years",
+                                    "price": 35000
+                                },
+                                {
+                                    "name": "Above Ksh.1M upto 16 - 20 Years",
+                                    "price": 35000
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "psvMatatuPlain": {
+                "thirdParty": {
+                    "title": "psv matatu plain annual third party",
+                    "category": "Seaters",
+                    "insurances": [
+                        {
+                            "name": "amaco",
+                            "options": [
+                                {
+                                    "name": "14 Seats",
+                                    "price": 13500
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "staffBuses": {
+                "thirdParty": {
+                    "title": "instituition buses third party rates(annual)",
+                    "category": "No of Passengers",
+                    "insurances": [
+                        {
+                            "name": "amaco",
+                            "options": [
+                                {
+                                    "name": "0 To 15 Passengers",
+                                    "price": "Ksh. 9000 + (500 each pupil)"
+                                },
+                                {
+                                    "name": "15 To 25 Passengers",
+                                    "price": "Ksh. 10500 + (500 each pupil)"
+                                },
+                                {
+                                    "name": "25 Passengers and Above",
+                                    "price": "Ksh. 13000 + (500 each pupil)"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "trident",
+                            "options": [
+                                {
+                                    "name": "All School buses and Vans",
+                                    "price": "Ksh. 8500 + (500 each pupil)"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "comprehensive": {
+                    "title": "instituition buses comprehensive rates(annual)",
+                    "category": "Value of the Instituition Insured",
+                    "insurances": [
+                        {
+                            "name": "amaco",
+                            "options": [
+                                {
+                                    "name": "All School buses and Vans",
+                                    "price": "4.5% of the Value of the vehicle"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "trident",
+                            "options": [
+                                {
+                                    "name": "Below Ksh.1M upto 15 Years",
+                                    "price": 45000
+                                },
+                                {
+                                    "name": "Below Ksh.1M upto 16 - 20 Years",
+                                    "price": 45000
+                                },
+                                {
+                                    "name": "Above Ksh.1M upto 15 Years",
+                                    "price": 43000
+                                },
+                                {
+                                    "name": "Above Ksh.1M upto 16 - 20 Years",
+                                    "price": 43000
+                                }
+                            ]
+                        },
+                        {
+                            "name": "directLine",
+                            "options": [
+                                {
+                                    "name": "All School buses and Vans Minimum Value Ksh. 750,000",
+                                    "price": "4.5% of the Value of the vehicle"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
