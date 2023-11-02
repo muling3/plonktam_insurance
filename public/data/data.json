@@ -262,6 +262,61 @@
             }
         },
         {
+            "psvTaxi": {
+                "thirdParty": {
+                    "title": "psv taxi third party",
+                    "category": "No of Passengers",
+                    "insurances": [
+                        {
+                            "name": "amaco",
+                            "options": [
+                                {
+                                    "name": "1 To 9 Passengers",
+                                    "price": "Ksh 6500 + (500 each pupil)"
+                                },
+                                {
+                                    "name": "10 To 18 Passengers",
+                                    "price": "Ksh 8500 + (500 each pupil)"
+                                },
+                                {
+                                    "name": "19 To 24 Passengers",
+                                    "price": "Ksh 12500 + (500 each pupil)"
+                                },
+                                {
+                                    "name": "25 To 41 Passengers",
+                                    "price": "Ksh 15000 + (500 each pupil)"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "comprehensive": {
+                    "title": "psv comprehensive",
+                    "category": "Type of Vehicle Insured",
+                    "insurances": [
+                        {
+                            "name": "amaco",
+                            "options": [
+                                {
+                                    "name": "All PSV Taxi",
+                                    "price": "5.7% of the Value of the Vehicle"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "directLine",
+                            "options": [
+                                {
+                                    "name": "All PSV Taxi",
+                                    "price": "5.9% of the Value of the Vehicle"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
             "psvMatatus": {
                 "thirdParty": {
                     "title": "psv matatu short periods",
