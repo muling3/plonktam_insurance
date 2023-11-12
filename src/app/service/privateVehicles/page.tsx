@@ -22,7 +22,7 @@ const PrivateVehicles = () => {
               </div>
             </div>
           </Link>
-          <Link href={"/service/privateVehicles/comprehensve"}>
+          <Link href={"/service/privateVehicles/comprehensive"}>
             <div className="header bg-[#007A37] flex items-center justify-start w-full py-2 rounded-lg my-3">
               <div className="text-center">
                 <span
