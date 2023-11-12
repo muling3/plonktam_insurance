@@ -6,14 +6,13 @@ import FooterSection from "@/components/FooterSection";
 import HomeSection from "@/components/HomeSection";
 import Navbar from "@/components/Navbar";
 
-import { useSearchParams } from "next/navigation";
 import { ServiceCardProps } from "@/components/ServiceCard";
 
 export default function Home() {
   const services: ServiceCardProps[] = [
     {
       title: "Private Vehicles",
-      cat: "private-vehicles",
+      cat: "privateVehicles",
       image: "/services/private.png",
     },
     { title: "Lorries", cat: "lorries", image: "/services/lorries.png" },
