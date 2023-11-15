@@ -4,7 +4,7 @@ const Directline = () => {
       <div className="w-full flex-1 px-2 py-2 sm:px-24 sm:py-4">
         <div className="header w-full my-4">
           <p className="text-lg font-semibold uppercase">
-            Directline comprehensive covers
+            trident comprehensive covers
           </p>
         </div>
         <div className="opts w-full grid grid-cols-3 gap-16 place-items-center">
