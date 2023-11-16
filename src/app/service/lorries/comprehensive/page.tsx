@@ -14,9 +14,9 @@ const Comprehensive = () => {
             </div>
           </Link>
 
-          <Link href="#">
+          <Link href={"/service/lorries/comprehensive/trident"}>
             <div className="py-2 uppercase text-white bg-[#007A37] grid place-items-center">
-              directline insurance
+              trident insurance
             </div>
           </Link>
         </div>

@@ -20,7 +20,7 @@ const ThirdPartyPsv = () => {
               <div className="uppercase">psv matatu short periods</div>
             </div>
           </Link>
-          <Link href={"/service/thirdPartyPsv/comprehensive"}>
+          <Link href={"/service/thirdPartyPsv/annual"}>
             <div className="header bg-[#007A37] flex items-center justify-start w-full py-2 rounded-lg my-3">
               <div className="text-center">
                 <span
