@@ -5,7 +5,7 @@ const ThirdPartyPsv = () => {
     <>
       <div className="w-full flex-1 px-2 py-2 sm:px-24 sm:py-4">
         <div className="header w-full my-4">
-          <p className="text-lg font-semibold uppercase">Lorries</p>
+          <p className="text-lg font-semibold uppercase">psv matatu</p>
         </div>
         <div className="opts w-full text-white">
           <Link href={"/service/thirdPartyPsv/shortPeriods"}>
