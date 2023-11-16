@@ -1,14 +1,14 @@
 import Link from "next/link";
 
-const CommercialTuktuks = () => {
+const PsvTukTuks = () => {
   return (
     <>
       <div className="w-full flex-1 px-2 py-2 sm:px-24 sm:py-4">
         <div className="header w-full my-4">
-          <p className="text-lg font-semibold uppercase">commercial tuktuk</p>
+          <p className="text-lg font-semibold uppercase">psv third party tuktuk</p>
         </div>
         <div className="opts w-full text-white">
-          <Link href={"/service/commercialTuktuks/thirdParty"}>
+          <Link href={"/service/psvTuktuks/thirdParty"}>
             <div className="header bg-[#007A37] flex items-center justify-start w-full py-2 rounded-lg my-3">
               <div className="text-center">
                 <span
@@ -18,11 +18,11 @@ const CommercialTuktuks = () => {
                 </span>
               </div>
               <div className="uppercase">
-                commercial tuktuk third party rates(annual)
+                psv tuktuk third party rates(annual)
               </div>
             </div>
           </Link>
-          <Link href={"/service/commercialTuktuks/comprehensive"}>
+          <Link href={"/service/psvTuktuks/comprehensive"}>
             <div className="header bg-[#007A37] flex items-center justify-start w-full py-2 rounded-lg my-3">
               <div className="text-center">
                 <span
@@ -32,7 +32,7 @@ const CommercialTuktuks = () => {
                 </span>
               </div>
               <div className="uppercase">
-                commercial tuktuk comprehensive rates(annual)
+                psv tuktuk comprehensive rates(annual)
               </div>
             </div>
           </Link>
@@ -42,4 +42,4 @@ const CommercialTuktuks = () => {
   );
 };
 
-export default CommercialTuktuks;
+export default PsvTukTuks;
