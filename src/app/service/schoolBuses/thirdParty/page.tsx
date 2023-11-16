@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const ShortPeriods = () => {
+const ThirdParty = () => {
   return (
     <>
       <div className="w-full flex-1 px-2 py-2 sm:px-24 sm:py-4">
@@ -27,4 +27,4 @@ const ShortPeriods = () => {
   );
 };
 
-export default ShortPeriods;
+export default ThirdParty;

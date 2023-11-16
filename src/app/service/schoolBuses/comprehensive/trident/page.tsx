@@ -1,4 +1,4 @@
-const Amaco = () => {
+const Trident = () => {
   return (
     <>
       <div className="w-full flex-1 px-2 py-2 sm:px-24 sm:py-4">
@@ -41,4 +41,4 @@ const Amaco = () => {
   );
 };
 
-export default Amaco;
+export default Trident;

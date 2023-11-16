@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const ThirdPartyPsv = () => {
+const PsvTaxi = () => {
   return (
     <>
       <div className="w-full flex-1 px-2 py-2 sm:px-24 sm:py-4">
@@ -40,4 +40,4 @@ const ThirdPartyPsv = () => {
   );
 };
 
-export default ThirdPartyPsv;
+export default PsvTaxi;
