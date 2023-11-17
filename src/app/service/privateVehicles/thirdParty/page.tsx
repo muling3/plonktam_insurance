@@ -10,7 +10,7 @@ const ThirdParty = () => {
             third party private covers
           </p>
         </div>
-        <div className="opts w-full grid grid-cols-3 gap-16 place-items-center">
+        <div className="opts w-full grid grid-cols-3 gap-2 sm:gap-16 place-items-center">
           <div className="font-bold">Insurance</div>
           <div className="font-bold">Price</div>
           <div className="font-bold">Action</div>
@@ -25,7 +25,7 @@ const ThirdParty = () => {
             />
           </div>
           <div className="">ksh. 4, 950</div>
-          <div className="bg-[#007A37] text-white px-4 py-2 uppercase">
+          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
             add to cart
           </div>
 
@@ -39,7 +39,7 @@ const ThirdParty = () => {
             />
           </div>
           <div className="">ksh. 6, 500</div>
-          <div className="bg-[#007A37] text-white px-4 py-2 uppercase">
+          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
             add to cart
           </div>
 
@@ -53,7 +53,7 @@ const ThirdParty = () => {
             />
           </div>
           <div className="">ksh. 7, 574</div>
-          <div className="bg-[#007A37] text-white px-4 py-2 uppercase">
+          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
             add to cart
           </div>
 
@@ -67,7 +67,7 @@ const ThirdParty = () => {
             />
           </div>
           <div className="">ksh. 8, 450</div>
-          <div className="bg-[#007A37] text-white px-4 py-2 uppercase">
+          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
             add to cart
           </div>
 
@@ -81,7 +81,7 @@ const ThirdParty = () => {
             />
           </div>
           <div className="">ksh. 12, 000</div>
-          <div className="bg-[#007A37] text-white px-4 py-2 uppercase">
+          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
             add to cart
           </div>
 
@@ -95,7 +95,7 @@ const ThirdParty = () => {
             />
           </div>
           <div className="">ksh. 7, 574</div>
-          <div className="bg-[#007A37] text-white px-4 py-2 uppercase">
+          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
             add to cart
           </div>
         </div>

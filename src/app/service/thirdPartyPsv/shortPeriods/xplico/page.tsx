@@ -7,7 +7,7 @@ const Xplico = () => {
             xplico psv matatu rates
           </p>
         </div>
-        <div className="opts w-full grid grid-cols-3 gap-16 place-items-center">
+        <div className="opts w-full grid grid-cols-3 gap-3 sm:gap-16 place-items-center">
           <div className="font-bold">Seaters</div>
           <div className="font-bold">Options</div>
           <div className="font-bold">Action</div>
@@ -24,7 +24,7 @@ const Xplico = () => {
               <option>7 Days - Ksh. 2, 750</option>
             </select>
           </div>
-          <div className="bg-[#007A37] text-white px-4 py-2 uppercase">
+          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
             add to cart
           </div>
 
@@ -40,7 +40,7 @@ const Xplico = () => {
               <option>7 Days - Ksh. 3, 000</option>
             </select>
           </div>
-          <div className="bg-[#007A37] text-white px-4 py-2 uppercase">
+          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
             add to cart
           </div>
 
@@ -56,7 +56,7 @@ const Xplico = () => {
               <option>7 Days - Ksh. 3, 375</option>
             </select>
           </div>
-          <div className="bg-[#007A37] text-white px-4 py-2 uppercase">
+          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
             add to cart
           </div>
 
@@ -72,7 +72,7 @@ const Xplico = () => {
               <option>7 Days - Ksh. 4, 400</option>
             </select>
           </div>
-          <div className="bg-[#007A37] text-white px-4 py-2 uppercase">
+          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
             add to cart
           </div>
 
@@ -88,7 +88,7 @@ const Xplico = () => {
               <option>7 Days - Ksh. 5, 250</option>
             </select>
           </div>
-          <div className="bg-[#007A37] text-white px-4 py-2 uppercase">
+          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
             add to cart
           </div>
 
@@ -104,7 +104,7 @@ const Xplico = () => {
               <option>7 Days - Ksh. 9, 100</option>
             </select>
           </div>
-          <div className="bg-[#007A37] text-white px-4 py-2 uppercase">
+          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
             add to cart
           </div>
         </div>

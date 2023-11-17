@@ -7,7 +7,7 @@ const Directline = () => {
             directline psv matatu rates
           </p>
         </div>
-        <div className="opts w-full grid grid-cols-3 gap-16 place-items-center">
+        <div className="opts w-full grid grid-cols-3 gap-3 sm:gap-16 place-items-center">
           <div className="font-bold">Seaters</div>
           <div className="font-bold">Options</div>
           <div className="font-bold">Action</div>
@@ -25,7 +25,7 @@ const Directline = () => {
               <option>7 Days - Ksh. 2, 240</option> */}
             </select>
           </div>
-          <div className="bg-[#007A37] text-white px-4 py-2 uppercase">
+          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
             add to cart
           </div>
 
@@ -34,14 +34,15 @@ const Directline = () => {
             <select
               id="seaters"
               name="seaters"
-              className="block rounded-md border-0 px-4 py-1.5 text-gray-900 shadow-sm sm:max-w-xs sm:text-sm sm:leading-6"
+              className="block rounded-md border-0 px-1 sm:px-4 py-1.5 text-gray-900 shadow-sm sm:max-w-xs sm:text-sm sm:leading-6"
             >
+              <option>Choose</option>
               <option>1 Month - Ksh. 9, 005</option>
               <option>14 Days - Ksh. 6, 350</option>
               <option>7 Days - Ksh. 3, 700</option>
             </select>
           </div>
-          <div className="bg-[#007A37] text-white px-4 py-2 uppercase">
+          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
             add to cart
           </div>
 
@@ -52,12 +53,13 @@ const Directline = () => {
               name="seaters"
               className="block rounded-md border-0 px-4 py-1.5 text-gray-900 shadow-sm sm:max-w-xs sm:text-sm sm:leading-6"
             >
+              <option>Choose</option>
               <option>1 Month - Ksh. 9, 005</option>
               <option>14 Days - Ksh. 6, 350</option>
               <option>7 Days - Ksh. 3, 700</option>
             </select>
           </div>
-          <div className="bg-[#007A37] text-white px-4 py-2 uppercase">
+          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
             add to cart
           </div>
 
@@ -68,12 +70,13 @@ const Directline = () => {
               name="seaters"
               className="block rounded-md border-0 px-4 py-1.5 text-gray-900 shadow-sm sm:max-w-xs sm:text-sm sm:leading-6"
             >
+              <option>Choose</option>
               <option>1 Month - Ksh. 11, 450</option>
               <option>14 Days - Ksh. 6, 200</option>
               <option>7 Days - Ksh. 3, 600</option>
             </select>
           </div>
-          <div className="bg-[#007A37] text-white px-4 py-2 uppercase">
+          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
             add to cart
           </div>
 
@@ -84,12 +87,13 @@ const Directline = () => {
               name="seaters"
               className="block rounded-md border-0 px-4 py-1.5 text-gray-900 shadow-sm sm:max-w-xs sm:text-sm sm:leading-6"
             >
+              <option>Choose</option>
               <option>1 Month - Ksh. 20, 980</option>
               <option>14 Days - Ksh. 11, 850</option>
               <option>7 Days - Ksh. 6, 900</option>
             </select>
           </div>
-          <div className="bg-[#007A37] text-white px-4 py-2 uppercase">
+          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
             add to cart
           </div>
 
@@ -100,12 +104,13 @@ const Directline = () => {
               name="seaters"
               className="block rounded-md border-0 px-4 py-1.5 text-gray-900 shadow-sm sm:max-w-xs sm:text-sm sm:leading-6"
             >
+              <option>Choose</option>
               <option>1 Month - Ksh. 22, 940</option>
               <option>14 Days - Ksh. 12, 650</option>
               <option>7 Days - Ksh. 9, 100</option>
             </select>
           </div>
-          <div className="bg-[#007A37] text-white px-4 py-2 uppercase">
+          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
             add to cart
           </div>
 
@@ -116,12 +121,13 @@ const Directline = () => {
               name="seaters"
               className="block rounded-md border-0 px-4 py-1.5 text-gray-900 shadow-sm sm:max-w-xs sm:text-sm sm:leading-6"
             >
+              <option>Choose</option>
               <option>1 Month - Ksh. 23, 440</option>
               <option>14 Days - Ksh. 15, 850</option>
               <option>7 Days - Ksh. 9, 250</option>
             </select>
           </div>
-          <div className="bg-[#007A37] text-white px-4 py-2 uppercase">
+          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
             add to cart
           </div>
         </div>

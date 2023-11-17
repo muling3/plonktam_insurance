@@ -7,32 +7,32 @@ const Trident = () => {
             trident comprehensive covers
           </p>
         </div>
-        <div className="opts w-full grid grid-cols-3 gap-16 place-items-center">
+        <div className="opts w-full grid grid-cols-3 gap-3 sm:gap-16 place-items-center">
           <div className="font-bold">Value of the Pickup Insured</div>
           <div className="font-bold">Insurance cost</div>
           <div className="font-bold">Action</div>
 
           <div>Below Ksh. 1M upto 15 Years </div>
           <div className="">ksh. 38, 000</div>
-          <div className="bg-[#007A37] text-white px-4 py-2 uppercase">
+          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
             add to cart
           </div>
 
           <div>Below Ksh. 1M upto 16 - 20 Years </div>
           <div className="">ksh. 38, 000</div>
-          <div className="bg-[#007A37] text-white px-4 py-2 uppercase">
+          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
             add to cart
           </div>
 
           <div>Above Ksh. 1M upto 15 Years </div>
           <div className="">ksh. 35, 000</div>
-          <div className="bg-[#007A37] text-white px-4 py-2 uppercase">
+          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
             add to cart
           </div>
 
           <div>Above Ksh. 1M upto 16 - 20 Years </div>
           <div className="">ksh. 35, 000</div>
-          <div className="bg-[#007A37] text-white px-4 py-2 uppercase">
+          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
             add to cart
           </div>
         </div>

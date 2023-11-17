@@ -7,14 +7,14 @@ const Directline = () => {
             directline taxi comprehensive covers
           </p>
         </div>
-        <div className="opts w-full grid grid-cols-3 gap-16 place-items-center">
+        <div className="opts w-full grid grid-cols-3 gap-3 sm:gap-16 place-items-center">
           <div className="font-bold">Type of the Vehicle</div>
           <div className="font-bold">Insurance Cost</div>
           <div className="font-bold">Action</div>
 
           <div>All PSV Taxi</div>
           <div className="">5.9% of the Value of the vehicle</div>
-          <div className="bg-[#007A37] text-white px-4 py-2 uppercase">
+          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
             add to cart
           </div>
         </div>
