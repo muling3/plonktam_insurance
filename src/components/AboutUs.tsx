@@ -29,7 +29,7 @@ const AboutUs = () => {
         </p>
       </div>
       <div className="content my-8">
-        <div className="cards grid grid-cols-1 sm:grid-cols-3 gap-2">
+        <div className="cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
           <div className="mission flex flex-col justify-center items-center border hover:border-[#007A37] rounded-md p-3 shadow-md transition-all duration-200">
             <div className="title text-[#007A37] font-bold">Our Mission</div>
             <div className="body mt-4">

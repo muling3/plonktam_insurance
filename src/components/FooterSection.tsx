@@ -10,7 +10,7 @@ const FooterSection = () => {
   ];
 
   return (
-    <div className="px-24 mt-12 w-full bg-[#007A37] py-4 grid grid-cols-1 sm:grid-cols-5 items-start gap-3">
+    <div className="px-24 mt-12 w-full bg-[#007A37] py-4 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 items-start gap-3">
       <div className="logo h-full flex flex-col justify-center items-center">
         <div>
           <Image
@@ -48,7 +48,7 @@ const FooterSection = () => {
             <span className="material-symbols-outlined mr-2">location_on</span>
             Nairobi Kenya.
           </div>
-          <div className="text-white flex justify-start items-center mb-2 cursor-pointer text-clip">
+          <div className="text-white flex justify-start items-center mb-2 cursor-pointer break-words">
             <span className="material-symbols-outlined mr-2">mail</span>
             plonktaminsurance@gmail.com
           </div>

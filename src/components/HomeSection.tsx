@@ -9,7 +9,7 @@ const HomeSection: FC<{services: ServiceCardProps[]}> = ({ services }) => {
         <div className="header w-full my-10">
           <p className="text-2xl text-center font-bold">Our Services</p>
         </div>
-        <div className="content grid grid-cols-2 sm:grid-cols-5 gap-2">
+        <div className="content grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
           {services.map((svc) => (
             <ServiceCard
               image={svc.image}
