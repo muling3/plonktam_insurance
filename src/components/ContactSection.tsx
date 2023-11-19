@@ -3,7 +3,7 @@ import React from "react";
 const ContactSection = () => {
   return (
     <div className="px-2 py-2 sm:px-24 mt-12 w-full mb-16">
-      <div className="header w-full my-10">
+      <div className="header w-full">
         <p className="text-2xl text-center font-bold">Contact Us</p>
         <p className="text-center mt-2">
           Say hello, Send us gifts or ask us anything using this contact form

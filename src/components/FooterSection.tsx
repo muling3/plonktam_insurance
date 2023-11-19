@@ -37,27 +37,7 @@ const FooterSection = () => {
           ))}
         </div>
       </div>
-      <div className="w-full">
-        <div className="header w-full my-5">
-          <p className="text-lg text-start font-semibold text-white">
-            Contact Info
-          </p>
-        </div>
-        <div className="content flex flex-col justify-start items-start">
-          <div className="text-white flex justify-start items-center mb-2 cursor-pointer">
-            <span className="material-symbols-outlined mr-2">location_on</span>
-            Nairobi Kenya.
-          </div>
-          <div className="text-white flex justify-start items-center mb-2 cursor-pointer break-words">
-            <span className="material-symbols-outlined mr-2">mail</span>
-            plonktaminsurance@gmail.com
-          </div>
-          <div className="text-white flex justify-start items-center mb-2 cursor-pointer">
-            <span className="material-symbols-outlined mr-2">call</span>
-            0742544580/0786970714
-          </div>
-        </div>
-      </div>
+
       <div className="w-full">
         <div className="header w-full my-5">
           <p className="text-lg text-start font-semibold text-white">
@@ -109,6 +89,27 @@ const FooterSection = () => {
           </div>
           <div className="text-white flex justify-start items-center mb-2 cursor-pointer">
             Closed Saturday
+          </div>
+        </div>
+      </div>
+      <div className="w-full">
+        <div className="header w-full my-5">
+          <p className="text-lg text-start font-semibold text-white">
+            Contact Info
+          </p>
+        </div>
+        <div className="content flex flex-col justify-start items-start">
+          <div className="text-white flex justify-start items-center mb-2 cursor-pointer">
+            <span className="material-symbols-outlined mr-2">location_on</span>
+            Nairobi Kenya.
+          </div>
+          <div className="text-white flex justify-start items-center mb-2 cursor-pointer break-words">
+            <span className="material-symbols-outlined mr-2">mail</span>
+            plonktaminsurance@gmail.com
+          </div>
+          <div className="text-white flex justify-start items-center mb-2 cursor-pointer">
+            <span className="material-symbols-outlined mr-2">call</span>
+            0742544580/0786970714
           </div>
         </div>
       </div>

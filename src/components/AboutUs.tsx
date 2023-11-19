@@ -17,7 +17,7 @@ const AboutUs = () => {
   ];
   return (
     <div className="px-2 py-2 sm:px-24 my-4">
-      <div className="header w-full my-10">
+      <div className="header w-full">
         <p className="text-2xl text-center font-bold">About Us</p>
         <p className="text-center mt-4">
           Welcome to Plonktam Insurance Agency, your trusted online destination
@@ -75,15 +75,17 @@ const AboutUs = () => {
         </div>
         <div className="partner-images flex flex-wrap justify-center items-start sm:justify-between sm:items-center">
           {partners.map((prt) => (
-            <Image
-              key={prt}
-              src={`/partners/${prt}.png`}
-              alt={prt}
-              className="dark:invert m-2"
-              width={80}
-              height={50}
-              priority
-            />
+            <div className="w-[80px] h-[80px] px-1 border-2 rounded flex justify-center items-center">
+              <Image
+                key={prt}
+                src={`/partners/${prt}.png`}
+                alt={prt}
+                className="object-cover"
+                width={100}
+                height={100}
+                priority
+              />
+            </div>
           ))}
         </div>
       </div>

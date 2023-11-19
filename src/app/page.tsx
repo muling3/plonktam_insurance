@@ -61,7 +61,7 @@ export default function Home() {
       <div className="relative">
         <Navbar />
       </div>
-      <section className="mt-24"></section>
+      <section className="mt-4"></section>
       <section id="home">
         <HomeSection services={services} />
       </section>
