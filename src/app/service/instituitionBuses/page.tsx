@@ -18,7 +18,7 @@ const InstituionBuses = () => {
                 </span>
               </div>
               <div className="uppercase">
-                instituition buses third party rates(annual)
+                institution buses third party rates(annual)
               </div>
             </div>
           </Link>

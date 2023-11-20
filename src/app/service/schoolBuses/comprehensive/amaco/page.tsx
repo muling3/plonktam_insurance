@@ -7,7 +7,7 @@ const Amaco = () => {
             amaco school buses comprehensive covers
           </p>
         </div>
-        <div className="opts w-full grid grid-cols-3 gap-3 sm:gap-16 place-items-center">
+        <div className="opts w-full grid grid-cols-3 gap-4 sm:gap-16 place-items-center">
           <div className="font-bold">Value of the Vehicle Insured</div>
           <div className="font-bold">Insurance Cost</div>
           <div className="font-bold">Action</div>

@@ -7,7 +7,7 @@ const Trident = () => {
             trident comprehensive covers
           </p>
         </div>
-        <div className="opts w-full grid grid-cols-3 gap-3 sm:gap-16 place-items-center">
+        <div className="opts w-full grid grid-cols-3 gap-6 sm:gap-16 place-items-center">
           <div className="font-bold">Value of the Lorry Insured</div>
           <div className="font-bold">Insurance cost</div>
           <div className="font-bold">Action</div>

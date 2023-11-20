@@ -7,7 +7,7 @@ const Xplico = () => {
             xplico psv matatu rates
           </p>
         </div>
-        <div className="opts w-full grid grid-cols-3 gap-3 sm:gap-16 place-items-center">
+        <div className="opts w-full grid grid-cols-3 gap-6 sm:gap-16 place-items-center">
           <div className="font-bold">Seaters</div>
           <div className="font-bold">Options</div>
           <div className="font-bold">Action</div>
