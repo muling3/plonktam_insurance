@@ -15,25 +15,25 @@ const Amaco = () => {
           <div>Below Ksh. 500, 000(MANDATORY EVALUATION) </div>
           <div className="">ksh. 45, 000</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>Ksh. 500, 000 To Ksh. 1M </div>
           <div className="">ksh. 50, 000</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>Ksh. 500, 000 To Ksh. 1M </div>
           <div className="">ksh. 50, 000</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>Over Ksh. 2.5M </div>
           <div className="">ksh. 40, 000</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
         </div>
       </div>

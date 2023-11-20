@@ -26,7 +26,7 @@ const Comprehensive = () => {
           </div>
           <div className="">ksh. 8, 000</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div className="h-16 w-20 relative">
@@ -40,7 +40,7 @@ const Comprehensive = () => {
           </div>
           <div className="">ksh. 22, 500</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div className="h-16 w-20 relative">
@@ -54,7 +54,7 @@ const Comprehensive = () => {
           </div>
           <div className="">ksh. 10, 000</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
         </div>
       </div>

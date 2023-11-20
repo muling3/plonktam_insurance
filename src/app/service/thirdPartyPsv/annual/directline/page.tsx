@@ -15,43 +15,43 @@ const Directline = () => {
           <div>14 Seats</div>
           <div className="">ksh. 100, 500</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>24 Seats</div>
           <div className="">ksh. 125, 800</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>25 Seats</div>
           <div className="">ksh. 129, 420</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>33 Seats</div>
           <div className="">ksh. 173, 952</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>37 Seats</div>
           <div className="">ksh. 229, 252</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>41 Seats</div>
           <div className="">ksh. 251, 200</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>42 Seats</div>
           <div className="">ksh. 256, 120</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
         </div>
       </div>

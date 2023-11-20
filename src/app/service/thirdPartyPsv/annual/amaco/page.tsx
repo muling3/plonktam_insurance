@@ -15,43 +15,43 @@ const Amaco = () => {
           <div>14 Seats</div>
           <div className="">ksh. 77, 500</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>24 Seats</div>
           <div className="">ksh. 103, 800</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>25 Seats</div>
           <div className="">ksh. 106, 420</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>33 Seats</div>
           <div className="">ksh. 134, 952</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>37 Seats</div>
           <div className="">ksh. 171, 252</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>41 Seats</div>
           <div className="">ksh. 186, 200</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>42 Seats</div>
           <div className="">ksh. 189, 120</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
         </div>
       </div>

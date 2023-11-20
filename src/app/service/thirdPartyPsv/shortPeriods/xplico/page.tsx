@@ -25,7 +25,7 @@ const Xplico = () => {
             </select>
           </div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>18 Seaters</div>
@@ -41,7 +41,7 @@ const Xplico = () => {
             </select>
           </div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>25 Seaters</div>
@@ -57,7 +57,7 @@ const Xplico = () => {
             </select>
           </div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>33 Seaters</div>
@@ -73,7 +73,7 @@ const Xplico = () => {
             </select>
           </div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>37 Seaters</div>
@@ -89,7 +89,7 @@ const Xplico = () => {
             </select>
           </div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>41 Seaters</div>
@@ -105,7 +105,7 @@ const Xplico = () => {
             </select>
           </div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
         </div>
       </div>

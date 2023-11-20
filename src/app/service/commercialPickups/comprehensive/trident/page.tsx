@@ -15,25 +15,25 @@ const Trident = () => {
           <div>Below Ksh. 1M upto 15 Years </div>
           <div className="">ksh. 38, 000</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>Below Ksh. 1M upto 16 - 20 Years </div>
           <div className="">ksh. 38, 000</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>Above Ksh. 1M upto 15 Years </div>
           <div className="">ksh. 35, 000</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>Above Ksh. 1M upto 16 - 20 Years </div>
           <div className="">ksh. 35, 000</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
         </div>
       </div>

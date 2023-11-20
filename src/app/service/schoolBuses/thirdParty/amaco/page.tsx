@@ -15,19 +15,19 @@ const Amaco = () => {
           <div>0 To 15 Passengers</div>
           <div className="">ksh. 9, 000 + (500 each pupil)</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>15 To 25 Passengers</div>
           <div className="">ksh. 10, 500 + (500 each pupil)</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
 
           <div>25 Passengers and Above</div>
           <div className="">ksh. 13, 000 + (500 each pupil)</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
         </div>
       </div>

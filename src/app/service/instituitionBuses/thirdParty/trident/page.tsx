@@ -15,7 +15,7 @@ const Amaco = () => {
           <div>All School buses and Vans</div>
           <div className="">ksh. 8, 500 + (400 each person)</div>
           <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            add to cart
+            select
           </div>
         </div>
       </div>
