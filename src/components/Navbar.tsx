@@ -47,8 +47,8 @@ const Navbar = () => {
           />
         </div>
         <div
-          className={`menu-items flex flex-col justify-start items-start bg-white dark:bg-gray-500 p-5 absolute top-10 left-[-200px] right-0 duration-500 transition-all z-10 ${
-            modalVisible ? "opacity-100 z-10" : "opacity-0 -z-10"
+          className={`menu-items flex flex-col justify-start items-start bg-white dark:bg-gray-500 p-5 absolute top-10 left-[-200px] right-0 duration-500 transition-all ${
+            modalVisible ? "opacity-100 z-20 visible" : "opacity-0 -z-10 hidden"
           }`}
         >
           <Link href={"/"}>
