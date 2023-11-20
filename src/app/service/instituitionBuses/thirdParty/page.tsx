@@ -15,7 +15,7 @@ const ShortPeriods = () => {
           </Link>
 
           <Link href={"/service/instituitionBuses/thirdParty/trident"}>
-            <div className="py-2 uppercase text-white bg-[#007A37] grid place-items-center">
+            <div className="py-2 uppercase text-white bg-[#000000] grid place-items-center">
               trident insurance
             </div>
           </Link>

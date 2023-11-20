@@ -15,7 +15,7 @@ const Comprehensive = () => {
           </Link>
 
           <Link href={"/service/lorries/comprehensive/trident"}>
-            <div className="py-2 uppercase text-white bg-[#007A37] grid place-items-center">
+            <div className="py-2 uppercase text-white bg-[#E41313] grid place-items-center">
               trident insurance
             </div>
           </Link>

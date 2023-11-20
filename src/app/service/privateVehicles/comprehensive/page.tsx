@@ -16,15 +16,27 @@ const Comprehensive = () => {
             </div>
           </Link>
 
-          <Link href={"/service/privateVehicles/comprehensive/cic"}>
-            <div className="py-2 uppercase text-white bg-[#007A37] grid place-items-center">
-              cic insurance
+          <Link href={"/service/privateVehicles/comprehensive/directline"}>
+            <div className="py-2 uppercase text-white bg-[#E41313] grid place-items-center">
+              directline insurance
             </div>
           </Link>
 
-          <Link href={"/service/privateVehicles/comprehensive/directline"}>
-            <div className="py-2 uppercase text-white bg-[#007A37] grid place-items-center">
-              directline insurance
+          <Link href={"/service/privateVehicles/comprehensive/monarch"}>
+            <div className="py-2 uppercase text-white bg-[#000000] grid place-items-center">
+              monarch insurance
+            </div>
+          </Link>
+
+          <Link href={"/service/privateVehicles/comprehensive/jubilee"}>
+            <div className="py-2 uppercase text-white bg-[#E41313] grid place-items-center">
+              kenya orient insurance
+            </div>
+          </Link>
+
+          <Link href={"/service/privateVehicles/comprehensive/trident"}>
+            <div className="py-2 uppercase text-white bg-[#000000] grid place-items-center">
+              trident insurance
             </div>
           </Link>
 
@@ -34,21 +46,9 @@ const Comprehensive = () => {
             </div>
           </Link>
 
-          <Link href={"/service/privateVehicles/comprehensive/monarch"}>
-            <div className="py-2 uppercase text-white bg-[#007A37] grid place-items-center">
-              monarch insurance
-            </div>
-          </Link>
-
-          <Link href={"/service/privateVehicles/comprehensive/jubilee"}>
-            <div className="py-2 uppercase text-white bg-[#007A37] grid place-items-center">
-              kenya orient insurance
-            </div>
-          </Link>
-
-          <Link href={"/service/privateVehicles/comprehensive/trident"}>
-            <div className="py-2 uppercase text-white bg-[#007A37] grid place-items-center">
-              trident insurance
+          <Link href={"/service/privateVehicles/comprehensive/cic"}>
+            <div className="py-2 uppercase text-white bg-[#E41313] grid place-items-center">
+              cic insurance
             </div>
           </Link>
         </div>

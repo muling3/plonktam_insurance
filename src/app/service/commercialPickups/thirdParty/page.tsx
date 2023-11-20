@@ -11,13 +11,13 @@ const ThirdParty = () => {
         </div>
         <div className="opts w-full grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-8">
           <Link href={"/service/commercialPickups/thirdParty/amaco"}>
-            <div className="py-2 uppercase text-white bg-[#007A37] grid place-items-center">
+            <div className="py-2 uppercase text-white bg-[#000000] grid place-items-center">
               Amaco insurance
             </div>
           </Link>
 
           <Link href={"/service/commercialPickups/thirdParty/trident"}>
-            <div className="py-2 uppercase text-white bg-[#007A37] grid place-items-center">
+            <div className="py-2 uppercase text-white bg-[#E41313] grid place-items-center">
               trident insurance
             </div>
           </Link>
