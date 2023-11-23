@@ -58,20 +58,6 @@ const Comprehensive = () => {
 
           <div className="h-16 w-20 relative">
             <Image
-              src={"/partners/monarch.png"}
-              alt={"Monarch"}
-              fill
-              priority
-              className="w-full h-full"
-            />
-          </div>
-          <div className="">ksh. 6, 900</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
-
-          <div className="h-16 w-20 relative">
-            <Image
               src={"/partners/directline.png"}
               alt={"DirectLine"}
               fill
