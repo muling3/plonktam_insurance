@@ -1,10 +1,52 @@
-import Link from "next/link";
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 const ThirdParty = () => {
+  const serviceName = "Private Vehicles";
+  const category = "Third Party Private Covers";
+  const [open, setOpen] = useState(false);
+  const [provider, setProvider] = useState("");
+  const [cost, setCost] = useState(0);
+
+  const handleSelect = (provider: string, cost: number) => {
+    setProvider(provider);
+    setCost(cost);
+
+    setOpen((prev) => !prev);
+  };
+
+  const closeModal = () => {
+    setOpen((prev) => !prev);
+  };
+
   return (
     <>
-      <div className="w-full flex-1 px-2 py-2 sm:px-24 sm:py-4">
+      <div className="w-full flex-1 px-2 py-2 sm:px-24 sm:py-4 relative">
+        {/* {open && ( */}
+        <div
+          className={`h-[420px] bg-slate-300 absolute left-10 sm:left-20 right-10 sm:right-20 px-2 py-2 sm:px-32 sm:py-4 rounded-md z-10 duration-1000 ${
+            open ? "top-[20px]" : "top-[-1000px]"
+          }`}
+        >
+          <div className="header w-full py-1 flex justify-between items-center">
+            <span
+              className="material-symbols-outlined p-2 rounded-full border"
+              onClick={() => closeModal()}
+            >
+              arrow_back
+            </span>
+            <span
+              className="material-symbols-outlined p-2 rounded-full border"
+              onClick={() => closeModal()}
+            >
+              arrow_back
+            </span>
+            {/* <span className="border rounded-full border"></span> */}
+          </div>
+        </div>
+        {/* )} */}
         <div className="header w-full my-4">
           <p className="text-lg font-semibold uppercase">
             third party private covers
@@ -25,7 +67,10 @@ const ThirdParty = () => {
             />
           </div>
           <div className="">ksh. 4, 950</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+          <div
+            className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md"
+            onClick={() => handleSelect("Trident", 4950)}
+          >
             select
           </div>
 
