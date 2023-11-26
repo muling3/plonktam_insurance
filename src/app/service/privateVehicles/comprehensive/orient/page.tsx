@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Orient = () => {
   return (
     <>
@@ -14,27 +16,35 @@ const Orient = () => {
 
           <div>Ksh. 500, 000 To 1M</div>
           <div className="">ksh. 42, 000</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <Link href={"/service/privateVehicles/comprehensive/orient/1"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
 
           <div>Ksh. 1M To Ksh. 2M</div>
           <div className="">ksh. 40, 000</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <Link href={"/service/privateVehicles/comprehensive/orient/2"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
 
           <div>Ksh. 2M To Ksh. 3M</div>
           <div className="">ksh. 38, 000</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <Link href={"/service/privateVehicles/comprehensive/orient/3"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
 
           <div>Over Ksh. 3M </div>
           <div className="">ksh. 40, 000</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <Link href={"/service/privateVehicles/comprehensive/orient/4"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
         </div>
       </div>
     </>

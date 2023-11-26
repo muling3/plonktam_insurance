@@ -28,7 +28,7 @@ const Comprehensive = () => {
             </div>
           </Link>
 
-          <Link href={"/service/privateVehicles/comprehensive/jubilee"}>
+          <Link href={"/service/privateVehicles/comprehensive/orient"}>
             <div className="py-2 uppercase text-white bg-[#E41313] grid place-items-center">
               kenya orient insurance
             </div>

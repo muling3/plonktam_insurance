@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Trident = () => {
   return (
     <>
@@ -14,27 +16,45 @@ const Trident = () => {
 
           <div>Below Ksh. 1M upto 15 Years </div>
           <div className="">ksh. 30, 000</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <Link
+            href={"/service/privateVehicles/comprehensive/trident/below-15"}
+          >
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
 
           <div>Below Ksh. 1M upto 16 - 20 Years</div>
           <div className="">ksh. 30, 000</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <Link
+            href={
+              "/service/privateVehicles/comprehensive/trident/between-16-20"
+            }
+          >
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
 
           <div>Above Ksh. 1M upto 15 Years </div>
           <div className="">ksh. 30, 000</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <Link
+            href={"/service/privateVehicles/comprehensive/trident/above-15"}
+          >
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
 
           <div>Above Ksh. 1M upto 16 - 20 Years</div>
           <div className="">ksh. 30, 000</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <Link
+            href={"/service/privateVehicles/comprehensive/trident/above-16-20"}
+          >
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
         </div>
       </div>
     </>

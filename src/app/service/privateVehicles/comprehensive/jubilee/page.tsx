@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Jubilee = () => {
   return (
     <>
@@ -14,21 +16,27 @@ const Jubilee = () => {
 
           <div>Ksh. 500, 000 To 1M</div>
           <div className="">ksh. 45, 000</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <Link href={"/service/privateVehicles/comprehensive/jubilee/1"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
 
           <div>Ksh. 1M To Ksh. 2.5M</div>
           <div className="">ksh. 67, 000</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <Link href={"/service/privateVehicles/comprehensive/monarch/2"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
 
           <div>Over Ksh. 2.5M </div>
           <div className="">Request a quotation</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <Link href={"/service/privateVehicles/comprehensive/monarch/2"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
         </div>
       </div>
     </>
