@@ -1,3 +1,7 @@
+"use client";
+
+import Link from "next/link";
+
 const Amaco = () => {
   return (
     <>
@@ -13,46 +17,60 @@ const Amaco = () => {
           <div className="font-bold">Action</div>
 
           <div>14 Seats</div>
-          <div className="">ksh. 77, 500</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <div className="">Ksh. 77, 500</div>
+          <Link href={"/service/thirdPartyPsv/annual/amaco/1"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
 
           <div>24 Seats</div>
-          <div className="">ksh. 103, 800</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <div className="">Ksh. 103, 800</div>
+          <Link href={"/service/thirdPartyPsv/annual/amaco/2"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
 
           <div>25 Seats</div>
-          <div className="">ksh. 106, 420</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <div className="">Ksh. 106, 420</div>
+          <Link href={"/service/thirdPartyPsv/annual/amaco/3"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
 
           <div>33 Seats</div>
-          <div className="">ksh. 134, 952</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <div className="">Ksh. 134, 952</div>
+          <Link href={"/service/thirdPartyPsv/annual/amaco/4"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
 
           <div>37 Seats</div>
-          <div className="">ksh. 171, 252</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <div className="">Ksh. 171, 252</div>
+          <Link href={"/service/thirdPartyPsv/annual/amaco/5"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
 
           <div>41 Seats</div>
-          <div className="">ksh. 186, 200</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <div className="">Ksh. 186, 200</div>
+          <Link href={"/service/thirdPartyPsv/annual/amaco/6"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
 
           <div>42 Seats</div>
-          <div className="">ksh. 189, 120</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <div className="">Ksh. 189, 120</div>
+          <Link href={"/service/thirdPartyPsv/annual/amaco/7"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
         </div>
       </div>
     </>
