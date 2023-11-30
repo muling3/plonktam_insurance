@@ -1,3 +1,7 @@
+"use client"
+
+import Link from "next/link";
+
 const Trident = () => {
   return (
     <>
@@ -13,10 +17,12 @@ const Trident = () => {
           <div className="font-bold">Action</div>
 
           <div>All School buses and Vans</div>
-          <div className="">ksh. 8, 500 + (400 each pupil)</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <div className="">Ksh. 8, 500 + (400 each pupil)</div>
+          <Link href={"/service/schoolBuses/thirdParty/trident/1"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
         </div>
       </div>
     </>
