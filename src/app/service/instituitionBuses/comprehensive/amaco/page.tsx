@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Amaco = () => {
   return (
     <>
@@ -14,9 +16,11 @@ const Amaco = () => {
 
           <div>All school buses and vans </div>
           <div className="">4.5% of the value of the Vehicle</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <Link href={"/service/instituitionBuses/comprehensive/amaco/1"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
         </div>
       </div>
     </>
