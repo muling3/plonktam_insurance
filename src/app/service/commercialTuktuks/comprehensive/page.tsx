@@ -24,24 +24,28 @@ const Comprehensive = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="">ksh. 8, 000</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <div className="">Ksh. 8, 000</div>
+          <Link href={"/service/commercialTuktuks/comprehensive/trident"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
 
           <div className="h-16 w-20 relative">
             <Image
               src={"/partners/monarch.png"}
-              alt={"Amaco"}
+              alt={"Monarch"}
               fill
               priority
               className="w-full h-full"
             />
           </div>
-          <div className="">ksh. 22, 500</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <div className="">Ksh. 22, 500</div>
+          <Link href={"/service/commercialTuktuks/comprehensive/monarch"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
 
           <div className="h-16 w-20 relative">
             <Image
@@ -52,10 +56,12 @@ const Comprehensive = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="">ksh. 10, 000</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <div className="">Ksh. 10, 000</div>
+          <Link href={"/service/commercialTuktuks/comprehensive/amaco"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
         </div>
       </div>
     </>
