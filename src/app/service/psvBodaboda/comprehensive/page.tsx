@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Comprehensive = () => {
   return (
@@ -24,9 +25,11 @@ const Comprehensive = () => {
             />
           </div>
           <div className="">ksh. 7, 000</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <Link href={"/service/psvBodaboda/comprehensive/trident"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
 
           <div className="h-16 w-20 relative">
             <Image
@@ -37,10 +40,12 @@ const Comprehensive = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="">ksh. 6, 900</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <div className="">Ksh. 6, 900</div>
+          <Link href={"/service/psvBodaboda/comprehensive/monarch"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
 
           <div className="h-16 w-20 relative">
             <Image
@@ -51,10 +56,12 @@ const Comprehensive = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="">ksh. 7, 000</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <div className="">Ksh. 7, 000</div>
+          <Link href={"/service/psvBodaboda/comprehensive/directline"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
         </div>
       </div>
     </>
