@@ -24,10 +24,12 @@ const ThirdParty = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="">ksh. 7, 000</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <div className="">Ksh. 7, 000</div>
+          <Link href={"/service/psvTuktuks/thirdParty/trident"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
 
           <div className="h-16 w-20 relative">
             <Image
@@ -38,10 +40,12 @@ const ThirdParty = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="">ksh. 8, 500</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <div className="">Ksh. 8, 500</div>
+          <Link href={"/service/psvTuktuks/thirdParty/monarch"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
         </div>
       </div>
     </>
