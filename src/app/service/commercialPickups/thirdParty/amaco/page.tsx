@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Amaco = () => {
   return (
     <>
@@ -13,16 +15,20 @@ const Amaco = () => {
           <div className="font-bold">Action</div>
 
           <div>0 To 3 Tonnes</div>
-          <div className="">ksh. 5, 950</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <div className="">Ksh. 5, 950</div>
+          <Link href={"/service/commercialPickups/thirdParty/amaco/1"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
 
           <div>3 To 6 Tonnes </div>
-          <div className="">ksh. 8, 500</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <div className="">Ksh. 8, 500</div>
+          <Link href={"/service/commercialPickups/thirdParty/amaco/2"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
         </div>
       </div>
     </>

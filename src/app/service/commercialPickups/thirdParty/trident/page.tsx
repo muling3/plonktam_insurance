@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Trident = () => {
   return (
     <>
@@ -13,16 +15,20 @@ const Trident = () => {
           <div className="font-bold">Action</div>
 
           <div>1 To 3 Tonnes</div>
-          <div className="">ksh. 5, 500</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <div className="">Ksh. 5, 500</div>
+          <Link href={"/service/commercialPickups/thirdParty/trident/1"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
 
           <div>4 To 8 Tonnes </div>
-          <div className="">ksh. 6, 100</div>
-          <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
-            select
-          </div>
+          <div className="">Ksh. 6, 100</div>
+          <Link href={"/service/commercialPickups/thirdParty/trident/2"}>
+            <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
+              select
+            </div>
+          </Link>
         </div>
       </div>
     </>
