@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 
@@ -13,11 +13,11 @@ const Amaco = () => {
         </div>
         <div className="opts w-full grid grid-cols-3 gap-6 sm:gap-16 place-items-center">
           <div className="font-bold">No. of Passengers</div>
-          <div className="font-bold">Insurance Cost</div>
+          <div className="font-bold">Insurance Cost(Ksh)</div>
           <div className="font-bold">Action</div>
 
           <div>1 To 9 Passengers</div>
-          <div className="">Ksh. 6, 500 + (500 each seat)</div>
+          <div className="">6, 500 + (500 each seat)</div>
           <Link href={"/service/psvTaxi/thirdParty/amaco/1"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -25,7 +25,7 @@ const Amaco = () => {
           </Link>
 
           <div>10 To 18 Passengers</div>
-          <div className="">Ksh. 8, 500 + (500 each seat)</div>
+          <div className="">8, 500 + (500 each seat)</div>
           <Link href={"/service/psvTaxi/thirdParty/amaco/2"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -33,7 +33,7 @@ const Amaco = () => {
           </Link>
 
           <div>19 To 24 Passengers</div>
-          <div className="">Ksh. 12, 500 + (500 each seat)</div>
+          <div className="">12, 500 + (500 each seat)</div>
           <Link href={"/service/psvTaxi/thirdParty/amaco/3"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -41,7 +41,7 @@ const Amaco = () => {
           </Link>
 
           <div>25 To 41 Passengers</div>
-          <div className="">Ksh. 15, 000 + (500 each seat)</div>
+          <div className="">15, 000 + (500 each seat)</div>
           <Link href={"/service/psvTaxi/thirdParty/amaco/4"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select

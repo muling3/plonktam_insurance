@@ -15,7 +15,7 @@ const ThirdParty = () => {
         </div>
         <div className="opts w-full grid grid-cols-3 gap-6 sm:gap-16 place-items-center">
           <div className="font-bold">Insurance</div>
-          <div className="font-bold">Price</div>
+          <div className="font-bold">Price(Ksh)</div>
           <div className="font-bold">Action</div>
 
           <div className="h-16 w-20 relative">
@@ -27,7 +27,7 @@ const ThirdParty = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="">ksh. 4, 950</div>
+          <div className="">4, 950</div>
           <Link href={"/service/privateVehicles/thirdParty/trident"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -43,7 +43,7 @@ const ThirdParty = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="">ksh. 6, 500</div>
+          <div className="">6, 500</div>
           <Link href={"/service/privateVehicles/thirdParty/amaco"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -59,7 +59,7 @@ const ThirdParty = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="">ksh. 7, 574</div>
+          <div className="">7, 574</div>
           <Link href={"/service/privateVehicles/thirdParty/cic"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -75,7 +75,7 @@ const ThirdParty = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="">ksh. 8, 450</div>
+          <div className="">8, 450</div>
           <Link href={"/service/privateVehicles/thirdParty/directline"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -91,7 +91,7 @@ const ThirdParty = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="">ksh. 12, 000</div>
+          <div className="">12, 000</div>
           <Link href={"/service/privateVehicles/thirdParty/jubilee"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -107,7 +107,7 @@ const ThirdParty = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="">ksh. 7, 574</div>
+          <div className="">7, 574</div>
           <Link href={"/service/privateVehicles/thirdParty/orient"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select

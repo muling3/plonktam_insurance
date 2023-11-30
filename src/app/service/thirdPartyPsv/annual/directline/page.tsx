@@ -13,11 +13,11 @@ const Directline = () => {
         </div>
         <div className="opts w-full grid grid-cols-3 gap-6 sm:gap-16 place-items-center">
           <div className="font-bold">Seaters</div>
-          <div className="font-bold">Options</div>
+          <div className="font-bold">Cost (Ksh)</div>
           <div className="font-bold">Action</div>
 
           <div>14 Seats</div>
-          <div className="">Ksh. 100, 500</div>
+          <div className="">100, 500</div>
           <Link href={"/service/thirdPartyPsv/annual/directline/1"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -25,7 +25,7 @@ const Directline = () => {
           </Link>
 
           <div>24 Seats</div>
-          <div className="">Ksh. 125, 800</div>
+          <div className="">125, 800</div>
           <Link href={"/service/thirdPartyPsv/annual/directline/2"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -33,7 +33,7 @@ const Directline = () => {
           </Link>
 
           <div>25 Seats</div>
-          <div className="">Ksh. 129, 420</div>
+          <div className="">129, 420</div>
           <Link href={"/service/thirdPartyPsv/annual/directline/3"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -41,7 +41,7 @@ const Directline = () => {
           </Link>
 
           <div>33 Seats</div>
-          <div className="">Ksh. 173, 952</div>
+          <div className="">173, 952</div>
           <Link href={"/service/thirdPartyPsv/annual/directline/4"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -49,7 +49,7 @@ const Directline = () => {
           </Link>
 
           <div>37 Seats</div>
-          <div className="">Ksh. 229, 252</div>
+          <div className="">229, 252</div>
           <Link href={"/service/thirdPartyPsv/annual/directline/5"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -57,7 +57,7 @@ const Directline = () => {
           </Link>
 
           <div>41 Seats</div>
-          <div className="">Ksh. 251, 200</div>
+          <div className="">251, 200</div>
           <Link href={"/service/thirdPartyPsv/annual/directline/6"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -65,7 +65,7 @@ const Directline = () => {
           </Link>
 
           <div>42 Seats</div>
-          <div className="">Ksh. 256, 120</div>
+          <div className="">256, 120</div>
           <Link href={"/service/thirdPartyPsv/annual/directline/7"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select

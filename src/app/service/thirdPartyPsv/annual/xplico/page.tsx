@@ -13,11 +13,11 @@ const Xplico = () => {
         </div>
         <div className="opts w-full grid grid-cols-3 gap-6 sm:gap-16 place-items-center">
           <div className="font-bold">Seaters</div>
-          <div className="font-bold">Options</div>
+          <div className="font-bold">Cost (Ksh)</div>
           <div className="font-bold">Action</div>
 
           <div>14 Seats</div>
-          <div className="">ksh. 73, 200</div>
+          <div className="">73, 200</div>
           <Link href={"/service/thirdPartyPsv/annual/xplico/1"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -25,7 +25,7 @@ const Xplico = () => {
           </Link>
 
           <div>18 Seats</div>
-          <div className="">ksh. 94, 300</div>
+          <div className="">94, 300</div>
           <Link href={"/service/thirdPartyPsv/annual/xplico/2"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -33,7 +33,7 @@ const Xplico = () => {
           </Link>
 
           <div>25 Seats</div>
-          <div className="">ksh. 98, 420</div>
+          <div className="">98, 420</div>
           <Link href={"/service/thirdPartyPsv/annual/xplico/3"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -41,7 +41,7 @@ const Xplico = () => {
           </Link>
 
           <div>33 Seats</div>
-          <div className="">ksh. 121, 952</div>
+          <div className="">121, 952</div>
           <Link href={"/service/thirdPartyPsv/annual/xplico/4"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -49,7 +49,7 @@ const Xplico = () => {
           </Link>
 
           <div>37 Seats</div>
-          <div className="">ksh. 151, 252</div>
+          <div className="">151, 252</div>
           <Link href={"/service/thirdPartyPsv/annual/xplico/5"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -57,7 +57,7 @@ const Xplico = () => {
           </Link>
 
           <div>41 Seats</div>
-          <div className="">ksh. 181, 200</div>
+          <div className="">181, 200</div>
           <Link href={"/service/thirdPartyPsv/annual/xplico/6"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select

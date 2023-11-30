@@ -11,11 +11,11 @@ const Orient = () => {
         </div>
         <div className="opts w-full grid grid-cols-3 gap-3 sm:gap-16 place-items-center">
           <div className="font-bold">Value of the Vehicle Insured</div>
-          <div className="font-bold">Insurance cost</div>
+          <div className="font-bold">Insurance cost(Ksh)</div>
           <div className="font-bold">Action</div>
 
           <div>Ksh. 500, 000 To 1M</div>
-          <div className="">ksh. 42, 000</div>
+          <div className="">42, 000</div>
           <Link href={"/service/privateVehicles/comprehensive/orient/1"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -23,7 +23,7 @@ const Orient = () => {
           </Link>
 
           <div>Ksh. 1M To Ksh. 2M</div>
-          <div className="">ksh. 40, 000</div>
+          <div className="">40, 000</div>
           <Link href={"/service/privateVehicles/comprehensive/orient/2"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -31,7 +31,7 @@ const Orient = () => {
           </Link>
 
           <div>Ksh. 2M To Ksh. 3M</div>
-          <div className="">ksh. 38, 000</div>
+          <div className="">38, 000</div>
           <Link href={"/service/privateVehicles/comprehensive/orient/3"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -39,7 +39,7 @@ const Orient = () => {
           </Link>
 
           <div>Over Ksh. 3M </div>
-          <div className="">ksh. 40, 000</div>
+          <div className="">40, 000</div>
           <Link href={"/service/privateVehicles/comprehensive/orient/4"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select

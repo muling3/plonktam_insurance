@@ -11,11 +11,11 @@ const Amaco = () => {
         </div>
         <div className="opts w-full grid grid-cols-3 gap-3 sm:gap-16 place-items-center">
           <div className="font-bold">No. of Passengers</div>
-          <div className="font-bold">Insurance Cost</div>
+          <div className="font-bold">Insurance Cost(Ksh)</div>
           <div className="font-bold">Action</div>
 
           <div>All School buses and Vans</div>
-          <div className="">Ksh. 8, 500 + (400 each person)</div>
+          <div className="">8, 500 + (400 each person)</div>
           <Link href={"/service/instituitionBuses/thirdParty/trident/1"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select

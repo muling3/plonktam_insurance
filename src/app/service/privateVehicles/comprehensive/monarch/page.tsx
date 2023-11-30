@@ -11,11 +11,11 @@ const Monarch = () => {
         </div>
         <div className="opts w-full grid grid-cols-3 gap-3 sm:gap-16 place-items-center">
           <div className="font-bold">Value of the Vehicle Insured</div>
-          <div className="font-bold">Insurance cost</div>
+          <div className="font-bold">Insurance cost(Ksh)</div>
           <div className="font-bold">Action</div>
 
           <div>Ksh. 500, 000 To 1M</div>
-          <div className="">ksh. 40, 000</div>
+          <div className="">40, 000</div>
           <Link href={"/service/privateVehicles/comprehensive/monarch/1"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -23,7 +23,7 @@ const Monarch = () => {
           </Link>
 
           <div>Ksh. 1.5M To Ksh. 2M</div>
-          <div className="">ksh. 39, 000</div>
+          <div className="">39, 000</div>
           <Link href={"/service/privateVehicles/comprehensive/monarch/2"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -31,7 +31,7 @@ const Monarch = () => {
           </Link>
 
           <div>Over Ksh. 2.5M </div>
-          <div className="">ksh. 40, 000</div>
+          <div className="">40, 000</div>
           <Link href={"/service/privateVehicles/comprehensive/monarch/3"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select

@@ -22,7 +22,7 @@ const CIC = () => {
             </div>
           </Link>
 
-          <div>Ksh. 1M To Ksh. 1.5M</div>
+          <div>Ksh. 1M To 1.5M</div>
           <div className="">5%</div>
           <Link href={"/service/privateVehicles/comprehensive/cic/2"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
