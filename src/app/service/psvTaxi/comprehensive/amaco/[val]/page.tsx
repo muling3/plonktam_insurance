@@ -10,7 +10,7 @@ const providers: { [k: string]: { cat: string; cost: string } } = {
   },
 };
 const Page = ({ params: { val } }: { params: { val: string } }) => {
-  const category = "All PSV Non Matatu Cover";
+  const category = "PSV Comprehensive Covers";
   const insurance = "Amaco";
   const provider = providers[val];
 
@@ -32,7 +32,7 @@ const Page = ({ params: { val } }: { params: { val: string } }) => {
       <div className="w-full flex-1 px-2 py-2 sm:px-24 sm:py-4">
         <div className={`bg-slate-300 px-2 py-2 sm:px-32 sm:py-4`}>
           <div className="header w-full py-1 flex justify-between items-center">
-            <Link href={"/service/psvTaxi/comprehensive/directline"}>
+            <Link href={"/service/psvTaxi/comprehensive/amaco"}>
               <span className="material-symbols-outlined p-2 rounded-full border">
                 close
               </span>
@@ -55,7 +55,7 @@ const Page = ({ params: { val } }: { params: { val: string } }) => {
                 <span className="font-bold text-white">{category}</span>
               </p>
               <p className="font-semibold text-gray-300 grid grid-cols-2 gap-2 my-2">
-                Passengers:
+                Vehicle Type:
                 <span className="font-bold text-white">{provider.cat}</span>
               </p>
               <p className="font-semibold text-gray-300 grid grid-cols-2 gap-2 my-2">
