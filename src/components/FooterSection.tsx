@@ -105,7 +105,7 @@ const FooterSection = () => {
           </div>
           <div className="text-white flex justify-start items-center mb-2 cursor-pointer break-words">
             <span className="material-symbols-outlined mr-2">mail</span>
-            plonktaminsurance@gmail.com
+            plonktaminsuranceagency@gmail.com
           </div>
           <div className="text-white flex justify-start items-center mb-2 cursor-pointer">
             <span className="material-symbols-outlined mr-2">call</span>
