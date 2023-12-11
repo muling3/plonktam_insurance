@@ -10,7 +10,7 @@ const FooterSection = () => {
   ];
 
   return (
-    <div className="px-12 sm:px-24 mt-12 w-full bg-[#007A37] py-4 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 items-start gap-3">
+    <div className="px-4 sm:px-24 mt-12 w-full bg-[#007A37] py-4 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 items-start gap-3">
       <div className="logo h-full flex flex-col justify-center items-center">
         <div>
           <Image

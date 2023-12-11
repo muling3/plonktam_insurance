@@ -73,7 +73,7 @@ const AboutUs = () => {
             our insurance partners
           </p>
         </div>
-        <div className="partner-images flex flex-wrap justify-center items-start sm:justify-between sm:items-center">
+        <div className="partner-images flex flex-wrap justify-center items-start sm:justify-between sm:items-center gap-4">
           {partners.map((prt) => (
             <div className="w-[80px] h-[80px] px-1 border-2 rounded flex justify-center items-center" key={prt}>
               <Image
