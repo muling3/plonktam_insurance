@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { FormEvent, useRef } from "react";
 
 const providers: { [k: string]: string } = {
   trident: "8, 000",
@@ -23,6 +24,54 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
       </div>
     );
   }
+
+  const formRef = useRef<HTMLFormElement | null>(null);
+
+  const readFileAsBase64 = (file: File) => {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = (error) => reject(error);
+      reader.readAsArrayBuffer(file);
+    });
+  };
+
+  const handleSendEmail = async (e: FormEvent<HTMLFormElement>) => {
+    // prevent default
+    e.preventDefault();
+
+    let data = new FormData(formRef.current!);
+    const idCard = await readFileAsBase64(data.get("idcard") as File);
+    const logbook = await readFileAsBase64(data.get("logbook") as File);
+
+    const submitObj = {
+      name: data.get("fullname"),
+      email: data.get("email"),
+      phone: data.get("phone"),
+      location: data.get("location"),
+      service: "Commercial Tuktuks",
+      category,
+      provider,
+      idCard,
+      logbook,
+      cost: `Ksh ${cost}`,
+    };
+
+    console.log("submitObj", submitObj);
+
+    fetch("/api/email", {
+      method: "POST",
+      body: JSON.stringify(submitObj),
+    })
+      .then((res) => res.json())
+      .then((response) => {
+        alert(response.message);
+      })
+      .catch((err) => {
+        alert(err);
+      });
+  };
+
   return (
     <>
       <div className="w-full flex-1 px-2 py-2 sm:px-24 sm:py-4">
@@ -62,7 +111,11 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
             <div>
               <p>Your personal details</p>
               <div className="user-form">
-                <form action="" className="w-full">
+                <form
+                  className="w-full"
+                  onSubmit={handleSendEmail}
+                  ref={formRef}
+                >
                   <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-2 my-4">
                     <div className="input-group">
                       <label
@@ -78,6 +131,7 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
                           id="fullname"
                           className="w-full rounded-md border border-[#007A37] pl-4 py-2 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-2 focus:border-[#007A37] sm:text-sm sm:leading-6"
                           placeholder="John Doe"
+                          required
                         />
                       </div>
                     </div>
@@ -95,6 +149,7 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
                           id="email"
                           className="w-full rounded-md border border-[#007A37] pl-4 py-2 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-2 focus:border-[#007A37] sm:text-sm sm:leading-6"
                           placeholder="you@example.com"
+                          required
                         />
                       </div>
                     </div>
@@ -114,6 +169,7 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
                           id="phone"
                           className="w-full rounded-md border border-[#007A37] pl-4 py-2 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-2 focus:border-[#007A37] sm:text-sm sm:leading-6"
                           placeholder="07x xxx xxx"
+                          required
                         />
                       </div>
                     </div>
@@ -131,6 +187,41 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
                           id="location"
                           className="w-full rounded-md border border-[#007A37] pl-4 py-2 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-2 focus:border-[#007A37] sm:text-sm sm:leading-6"
                           placeholder="Nairobi"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-2 my-4">
+                    <div className="input-group">
+                      <label
+                        htmlFor="idcard"
+                        className="block text-sm font-medium leading-6 text-gray-900"
+                      >
+                        Id Card
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          type="file"
+                          name="idcard"
+                          id="idcard"
+                          className="w-full rounded-md border border-[#007A37] pl-4 py-2 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-2 focus:border-[#007A37] sm:text-sm sm:leading-6"
+                        />
+                      </div>
+                    </div>
+                    <div className="input-group">
+                      <label
+                        htmlFor="logbook"
+                        className="block text-sm font-medium leading-6 text-gray-900"
+                      >
+                        Logbook
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          type="file"
+                          name="logbook"
+                          id="logbook"
+                          className="w-full rounded-md border border-[#007A37] pl-4 py-2 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-2 focus:border-[#007A37] sm:text-sm sm:leading-6"
                         />
                       </div>
                     </div>
