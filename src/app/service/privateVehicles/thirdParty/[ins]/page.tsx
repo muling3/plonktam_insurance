@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const providers: {[k: string]: string} = {
+const providers: { [k: string]: string } = {
   trident: "4, 950",
   amaco: "6, 500",
   cic: "7, 574",
@@ -20,8 +20,11 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
     return (
       <div className="w-full flex-1 bg-slate-200 flex justify-center items-center flex-col  px-2 py-2 sm:px-24 sm:py-4">
         <span>Page not found</span>
-        <Link href={"/"} className="my-6 py-4 px-6 text-white bg-[#007A37]">
-          Go Back Home
+        <Link
+          href={"/service/privateVehicles/thirdParty"}
+          className="my-6 py-4 px-6 text-white bg-[#007A37]"
+        >
+          Go Back
         </Link>
       </div>
     );
@@ -31,7 +34,7 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
       <div className="w-full flex-1 px-2 py-2 sm:px-24 sm:py-4">
         <div className={`bg-slate-300 px-2 py-2 sm:px-32 sm:py-4`}>
           <div className="header w-full py-1 flex justify-between items-center">
-            <Link href={"/"}>
+            <Link href={"/service/privateVehicles/thirdParty"}>
               <span className="material-symbols-outlined p-2 rounded-full border">
                 close
               </span>
