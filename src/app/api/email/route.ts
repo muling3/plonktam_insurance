@@ -3,8 +3,41 @@ import nodemailer from "nodemailer";
 import Mail from "nodemailer/lib/mailer";
 
 export async function POST(request: NextRequest) {
-  const { email, name, message } = await request.json();
-  console.log("i was hit");
+  const {
+    name,
+    email,
+    phone,
+    location,
+    category,
+    service,
+    provider,
+    cost,
+    logbook,
+    idCard,
+  } = await request.json();
+
+  const message = `<p>Dear Admin</p></br>
+                  <p>Hope this email finds you well</p></br>
+                  <p>Find details of the insurance request:</p></br></br>
+                  <h2>Requester Details</h2>
+                  <ol>
+                    <li>Name: <b>${name}</b></li>
+                    <li>Email: <b>${email}</b></li>
+                    <li>Phone: <b>${phone}</b></li>
+                    <li>Location: <b>${location}</b></li>
+                  </ol></br></br>
+                  <h2>Insurance Details</h2>
+                  <ol>
+                    <li>Service Name: <b>${service}</b></li>
+                    <li>Category: <b>${category}</b></li>
+                    <li>Provider: <b>${provider}</b></li>
+                    <li>Cost: <b>${cost}</b></li>
+                  </ol></br></br>
+
+                  <p>Find attached the requester documents for your inspection</p></br></br>
+                  <p>Kind regards</p>
+                  <p>Plonktam Mailing Team</p>
+                  `;
 
   const transport = nodemailer.createTransport({
     service: "gmail",
@@ -14,11 +47,25 @@ export async function POST(request: NextRequest) {
     },
   });
 
+  console.log(process.env.EMAIL, process.env.PASS, email, name, logbook);
+
   const mailOptions: Mail.Options = {
     from: process.env.EMAIL,
-    to: email, //"alexandermuli234@gmail.com", //process.env.MY_EMAIL,
-    subject: `Insurance Request From ${name} (${email})`,
-    text: message,
+    to: email,
+    subject: `Insurance Request From ${name}`,
+    html: message,
+    attachments: [
+      {
+        filename: `${name}-id-card`,
+        content: idCard,
+        // contentType: "application/pdf",
+      },
+      {
+        filename: `${name}-logbook.pdf`,
+        content: logbook,
+        contentType: "application/pdf",
+      },
+    ],
   };
 
   const sendMailPromise = () =>
@@ -27,7 +74,7 @@ export async function POST(request: NextRequest) {
         if (!err) {
           resolve("Email sent");
         } else {
-          reject(err.message);
+          reject(`ERROR Encountered: ${err}`);
         }
       });
     });
