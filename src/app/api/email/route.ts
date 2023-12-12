@@ -14,9 +14,10 @@ export async function POST(request: NextRequest) {
     cost,
     logbook,
     idCard,
+    msg
   } = await request.json();
 
-  const message = `<p>Dear Admin</p></br>
+  const message = msg ? msg : `<p>Dear Admin</p></br>
                   <p>Hope this email finds you well</p></br>
                   <p>Find details of the insurance request:</p></br></br>
                   <h2>Requester Details</h2>
