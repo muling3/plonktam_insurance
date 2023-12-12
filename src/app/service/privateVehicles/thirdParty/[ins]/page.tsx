@@ -16,6 +16,21 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
   const category = "Third Party Private Covers";
   const provider = ins.toUpperCase();
   const cost: string = providers[ins];
+
+  if (!cost) {
+    return (
+      <div className="w-full flex-1 bg-slate-200 flex justify-center items-center flex-col  px-2 py-2 sm:px-24 sm:py-4">
+        <span>Page not found</span>
+        <Link
+          href={"/service/privateVehicles/thirdParty"}
+          className="my-6 py-4 px-6 text-white bg-[#007A37]"
+        >
+          Go Back
+        </Link>
+      </div>
+    );
+  }
+
   const formRef = useRef<HTMLFormElement | null>(null);
 
   const readFileAsBase64 = (file: File) => {
@@ -63,19 +78,6 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
       });
   };
 
-  if (!cost) {
-    return (
-      <div className="w-full flex-1 bg-slate-200 flex justify-center items-center flex-col  px-2 py-2 sm:px-24 sm:py-4">
-        <span>Page not found</span>
-        <Link
-          href={"/service/privateVehicles/thirdParty"}
-          className="my-6 py-4 px-6 text-white bg-[#007A37]"
-        >
-          Go Back
-        </Link>
-      </div>
-    );
-  }
   return (
     <>
       <div className="w-full flex-1 px-2 py-2 sm:px-24 sm:py-4">

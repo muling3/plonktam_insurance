@@ -68,7 +68,7 @@ const Page = ({ params: { val } }: { params: { val: string } }) => {
                   </ol></br></br>
                   <h2>Insurance Details</h2>
                   <ol>
-                    <li>Service Name: <b>${"Private Vehicles"}</b></li>
+                    <li>Service Name: <b>${"Commercial Pickups"}</b></li>
                     <li>Category: <b>${category}</b></li>
                     <li>Value of the Vehicle: <b>${provider.cat}</b></li>
                     <li>Provider: <b>${insurance}</b></li>
@@ -150,7 +150,11 @@ const Page = ({ params: { val } }: { params: { val: string } }) => {
             <div>
               <p>Your personal details</p>
               <div className="user-form">
-                <form className="w-full" onSubmit={handleSendEmail} ref={formRef}>
+                <form
+                  className="w-full"
+                  onSubmit={handleSendEmail}
+                  ref={formRef}
+                >
                   <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-2 my-4">
                     <div className="input-group">
                       <label

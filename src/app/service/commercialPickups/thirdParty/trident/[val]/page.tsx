@@ -60,9 +60,9 @@ const Page = ({ params: { val } }: { params: { val: string } }) => {
                   </ol></br></br>
                   <h2>Insurance Details</h2>
                   <ol>
-                    <li>Service Name: <b>${"Private Vehicles"}</b></li>
+                    <li>Service Name: <b>${"Commercial Pickups"}</b></li>
                     <li>Category: <b>${category}</b></li>
-                    <li>Value of the Vehicle: <b>${provider.cat}</b></li>
+                    <li>Tonnes of the Pickup: <b>${provider.cat}</b></li>
                     <li>Provider: <b>${insurance}</b></li>
                     <li>Cost: <b>Ksh. ${provider.cost}</b></li>
                   </ol></br></br>
