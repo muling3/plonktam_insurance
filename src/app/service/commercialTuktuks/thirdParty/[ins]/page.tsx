@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FormEvent, useRef } from "react";
+import { FormEvent, useRef, useState } from "react";
 
 const providers: { [k: string]: string } = {
   trident: "3, 850",
@@ -26,6 +26,8 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
   }
 
   const formRef = useRef<HTMLFormElement | null>(null);
+  const [responseText, setResponseText] = useState<String>();
+  const [open, setOpen] = useState<boolean>(false);
 
   const readFileAsBase64 = (file: File) => {
     return new Promise((resolve, reject) => {
@@ -41,8 +43,13 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
     e.preventDefault();
 
     let data = new FormData(formRef.current!);
-    const idCard = await readFileAsBase64(data.get("idcard") as File);
-    const logbook = await readFileAsBase64(data.get("logbook") as File);
+    const idCard = (await readFileAsBase64(
+      data.get("idcard") as File
+    )) as ArrayBuffer;
+
+    const logbook = (await readFileAsBase64(
+      data.get("logbook") as File
+    )) as ArrayBuffer;
 
     const submitObj = {
       name: data.get("fullname"),
@@ -52,28 +59,50 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
       service: "Commercial Tuktuks",
       category,
       provider,
-      idCard,
-      logbook,
+      idCard: Buffer.from(idCard),
+      logbook: Buffer.from(logbook),
       cost: `Ksh ${cost}`,
     };
-
-    console.log("submitObj", submitObj);
 
     fetch("/api/email", {
       method: "POST",
       body: JSON.stringify(submitObj),
+      headers: {
+        "Content-Type": "application/json",
+      },
     })
       .then((res) => res.json())
       .then((response) => {
-        alert(response.message);
+        setOpen(true);
+        setResponseText(response.message);
+        formRef.current = null;
+        setTimeout(() => {
+          setOpen(false);
+        }, 10000);
       })
       .catch((err) => {
-        alert(err);
+        setOpen(true);
+        setResponseText(err);
       });
   };
 
   return (
     <>
+      <div
+        className={`absolute ${
+          open ? "top-10 sm:top-0" : "top-[-100px]"
+        } z-50 flex w-full justify-center items-center px-2 py-2 duration-500`}
+      >
+        <div className="header w-full sm:w-1/3 flex justify-between items-center bg-[#007A37] sm:bg-slate-300 px-2 py-2 mx-2">
+          <p className="text-white sm:text-gray-900">{responseText}</p>
+          <span
+            className="material-symbols-outlined p-1 rounded-full border cursor-pointer"
+            onClick={(e) => setOpen(false)}
+          >
+            close
+          </span>
+        </div>
+      </div>
       <div className="w-full flex-1 px-2 py-2 sm:px-24 sm:py-4">
         <div className={`bg-slate-300 px-2 py-2 sm:px-32 sm:py-4`}>
           <div className="header w-full py-1 flex justify-between items-center">

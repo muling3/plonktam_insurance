@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { FormEvent, useRef, useState } from "react";
 
 const providers: { [k: string]: { cat: string; cost: string } } = {
   "1": {
@@ -45,10 +46,108 @@ const Page = ({ params: { val } }: { params: { val: string } }) => {
     );
   }
 
+  const formRef = useRef<HTMLFormElement | null>(null);
+  const [responseText, setResponseText] = useState<String>();
+  const [open, setOpen] = useState<boolean>(false);
+
+  const readFileAsBase64 = (file: File) => {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = (error) => reject(error);
+      reader.readAsArrayBuffer(file);
+    });
+  };
+
+  const handleSendEmail = async (e: FormEvent<HTMLFormElement>) => {
+    // prevent default
+    e.preventDefault();
+
+    let data = new FormData(formRef.current!);
+    const idCard = (await readFileAsBase64(
+      data.get("idcard") as File
+    )) as ArrayBuffer;
+
+    const logbook = (await readFileAsBase64(
+      data.get("logbook") as File
+    )) as ArrayBuffer;
+    const msg = `<p>Dear Admin</p></br>
+                  <p>Hope this email finds you well</p></br>
+                  <p>Find details of the insurance request:</p></br></br>
+                  <h2>Requester Details</h2>
+                  <ol>
+                    <li>Name: <b>${data.get("fullname")}</b></li>
+                    <li>Email: <b>${data.get("email")}</b></li>
+                    <li>Phone: <b>${data.get("phone")}</b></li>
+                    <li>Location: <b>${data.get("location")}</b></li>
+                  </ol></br></br>
+                  <h2>Insurance Details</h2>
+                  <ol>
+                    <li>Service Name: <b>${"Third Party Psv Matatu's"}</b></li>
+                    <li>Category: <b>${category}</b></li>
+                    <li>Seaters: <b>${provider.cat}</b></li>
+                    <li>Provider: <b>${insurance}</b></li>
+                    <li>Cost: <b>Ksh. ${provider.cost}</b></li>
+                  </ol></br></br>
+
+                  <p>Find attached the requester documents for your inspection</p></br></br>
+                  <p>Kind regards</p>
+                  <p>Plonktam Mailing Team</p>
+                  `;
+
+    const submitObj = {
+      name: data.get("fullname"),
+      email: data.get("email"),
+      phone: data.get("phone"),
+      location: data.get("location"),
+      msg,
+      idCard: Buffer.from(idCard),
+      logbook: Buffer.from(logbook),
+    };
+
+    console.log("submitObj", submitObj);
+
+    fetch("/api/email", {
+      method: "POST",
+      body: JSON.stringify(submitObj),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((response) => {
+        setOpen(true);
+        setResponseText(response.message);
+        formRef.current = null;
+        setTimeout(() => {
+          setOpen(false);
+        }, 10000);
+      })
+      .catch((err) => {
+        setOpen(true);
+        setResponseText(err);
+      });
+  };
+
   const cost: string = provider.cost;
 
   return (
     <>
+      <div
+        className={`absolute ${
+          open ? "top-10 sm:top-0" : "top-[-100px]"
+        } z-50 flex w-full justify-center items-center px-2 py-2 duration-500`}
+      >
+        <div className="header w-full sm:w-1/3 flex justify-between items-center bg-[#007A37] sm:bg-slate-300 px-2 py-2 mx-2">
+          <p className="text-white sm:text-gray-900">{responseText}</p>
+          <span
+            className="material-symbols-outlined p-1 rounded-full border cursor-pointer"
+            onClick={(e) => setOpen(false)}
+          >
+            close
+          </span>
+        </div>
+      </div>
       <div className="w-full flex-1 px-2 py-2 sm:px-24 sm:py-4">
         <div className={`bg-slate-300 px-2 py-2 sm:px-32 sm:py-4`}>
           <div className="header w-full py-1 flex justify-between items-center">
@@ -92,7 +191,11 @@ const Page = ({ params: { val } }: { params: { val: string } }) => {
             <div>
               <p>Your personal details</p>
               <div className="user-form">
-                <form action="" className="w-full">
+                <form
+                  className="w-full"
+                  onSubmit={handleSendEmail}
+                  ref={formRef}
+                >
                   <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-2 my-4">
                     <div className="input-group">
                       <label
@@ -161,6 +264,40 @@ const Page = ({ params: { val } }: { params: { val: string } }) => {
                           id="location"
                           className="w-full rounded-md border border-[#007A37] pl-4 py-2 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-2 focus:border-[#007A37] sm:text-sm sm:leading-6"
                           placeholder="Nairobi"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-2 my-4">
+                    <div className="input-group">
+                      <label
+                        htmlFor="idcard"
+                        className="block text-sm font-medium leading-6 text-gray-900"
+                      >
+                        Id Card
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          type="file"
+                          name="idcard"
+                          id="idcard"
+                          className="w-full rounded-md border border-[#007A37] pl-4 py-2 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-2 focus:border-[#007A37] sm:text-sm sm:leading-6"
+                        />
+                      </div>
+                    </div>
+                    <div className="input-group">
+                      <label
+                        htmlFor="logbook"
+                        className="block text-sm font-medium leading-6 text-gray-900"
+                      >
+                        Logbook
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          type="file"
+                          name="logbook"
+                          id="logbook"
+                          className="w-full rounded-md border border-[#007A37] pl-4 py-2 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-2 focus:border-[#007A37] sm:text-sm sm:leading-6"
                         />
                       </div>
                     </div>

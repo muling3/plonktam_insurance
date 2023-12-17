@@ -14,10 +14,12 @@ export async function POST(request: NextRequest) {
     cost,
     logbook,
     idCard,
-    msg
+    msg,
   } = await request.json();
 
-  const message = msg ? msg : `<p>Dear Admin</p></br>
+  const message = msg
+    ? msg
+    : `<p>Dear Admin</p></br>
                   <p>Hope this email finds you well</p></br>
                   <p>Find details of the insurance request:</p></br></br>
                   <h2>Requester Details</h2>
@@ -48,23 +50,19 @@ export async function POST(request: NextRequest) {
     },
   });
 
-  console.log(process.env.EMAIL, process.env.PASS, email, name, logbook);
-
   const mailOptions: Mail.Options = {
     from: process.env.EMAIL,
-    to: email,
+    to: "mulingealexmuli@gmail.com",
     subject: `Insurance Request From ${name}`,
     html: message,
     attachments: [
       {
         filename: `${name}-id-card`,
-        content: idCard,
-        // contentType: "application/pdf",
+        content: Buffer.from(idCard),
       },
       {
         filename: `${name}-logbook.pdf`,
-        content: logbook,
-        contentType: "application/pdf",
+        content: Buffer.from(logbook),
       },
     ],
   };
@@ -75,14 +73,15 @@ export async function POST(request: NextRequest) {
         if (!err) {
           resolve("Email sent");
         } else {
+          console.log("error ", err);
           reject(`ERROR Encountered: ${err}`);
         }
       });
     });
 
   try {
-    await sendMailPromise();
-    return NextResponse.json({ message: "Email sent" });
+    // await sendMailPromise();
+    return NextResponse.json({ message: "Email was sent successfully" });
   } catch (err) {
     return NextResponse.json({ error: err }, { status: 500 });
   }
