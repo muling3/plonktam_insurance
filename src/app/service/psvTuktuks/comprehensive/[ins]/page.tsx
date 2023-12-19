@@ -18,7 +18,10 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
     return (
       <div className="w-full flex-1 bg-slate-200 flex justify-center items-center flex-col  px-2 py-2 sm:px-24 sm:py-4">
         <span>Page not found</span>
-        <Link href={"/"} className="my-6 py-4 px-6 text-white bg-[#007A37]">
+        <Link
+          href={"/service/psvTuktuks/comprehensive"}
+          className="my-6 py-4 px-6 text-white bg-[#007A37]"
+        >
           Go Back Home
         </Link>
       </div>
@@ -75,7 +78,9 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
       .then((response) => {
         setOpen(true);
         setResponseText(response.message);
-        formRef.current = null;
+
+        formRef.current?.reset();
+
         setTimeout(() => {
           setOpen(false);
         }, 10000);

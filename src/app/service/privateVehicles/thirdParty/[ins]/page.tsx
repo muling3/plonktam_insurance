@@ -81,7 +81,9 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
       .then((response) => {
         setOpen(true);
         setResponseText(response.message);
-        formRef.current = null;
+
+        formRef.current?.reset(); // reset form
+
         setTimeout(() => {
           setOpen(false);
         }, 10000);
