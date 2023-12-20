@@ -9,6 +9,11 @@ const Comprehensive = () => {
           <p className="text-lg font-semibold uppercase">
             comprehensive psv boda annual
           </p>
+          <Link href={"/service/psvBodaboda"}>
+            <span className="material-symbols-outlined p-2 rounded-full border">
+              close
+            </span>
+          </Link>
         </div>
         <div className="opts w-full grid grid-cols-3 gap-6 sm:gap-16 place-items-center">
           <div className="font-bold">Insurance</div>

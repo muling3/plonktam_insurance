@@ -8,7 +8,7 @@ const Comprehensive = () => {
           <p className="text-lg font-semibold uppercase">Lorries</p>
         </div>
         <div className="opts w-full grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-8">
-          <Link href={"/service/lorries/comprehensive/amaco"}>
+          <Link href={"/service/lorries"}>
             <div className="py-2 uppercase text-white bg-[#007A37] grid place-items-center">
               Amaco insurance
             </div>

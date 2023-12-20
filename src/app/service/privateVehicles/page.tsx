@@ -4,8 +4,13 @@ const PrivateVehicles = () => {
   return (
     <>
       <div className="w-full flex-1 px-2 py-2 sm:px-24 sm:py-4">
-        <div className="header w-full my-4">
+        <div className="header w-full my-4 flex justify-between flex-wrap items-center">
           <p className="text-lg font-semibold uppercase">Private Vehicles</p>
+          <Link href={"/"}>
+            <span className="material-symbols-outlined p-2 rounded-full border">
+              close
+            </span>
+          </Link>
         </div>
         <div className="opts w-full text-white">
           <Link href={"/service/privateVehicles/thirdParty"}>

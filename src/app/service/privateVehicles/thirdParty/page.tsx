@@ -8,10 +8,15 @@ const ThirdParty = () => {
         {/* {open && (
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-gray-200 opacity-40"></div>
         )} */}
-        <div className="header w-full my-4">
+        <div className="header w-full my-4 flex justify-between items-center flex-wrap">
           <p className="text-lg font-semibold uppercase">
             third party private covers
           </p>
+          <Link href={"/service/privateVehicles"}>
+            <span className="material-symbols-outlined p-2 rounded-full border">
+              close
+            </span>
+          </Link>
         </div>
         <div className="opts w-full grid grid-cols-3 gap-6 sm:gap-16 place-items-center">
           <div className="font-bold">Insurance</div>

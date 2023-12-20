@@ -94,10 +94,15 @@ const Xplico = () => {
   return (
     <>
       <div className="w-full flex-1 px-2 py-2 sm:px-24 sm:py-4">
-        <div className="header w-full my-4">
+        <div className="header w-full my-4 flex justify-between items-center flex-wrap">
           <p className="text-lg font-semibold uppercase">
             xplico psv matatu rates
           </p>
+          <Link href={"/service/thirdPartyPsv/shortPeriods"}>
+            <span className="material-symbols-outlined p-2 rounded-full border">
+              close
+            </span>
+          </Link>
         </div>
         <div className="opts w-full grid grid-cols-3 gap-6 sm:gap-16 place-items-center">
           <div className="font-bold">Seaters</div>
@@ -230,7 +235,7 @@ const Xplico = () => {
               id="seaters"
               name="seaters"
               className="w-full rounded-md border-0 px-4 py-1.5 text-gray-900 shadow-sm sm:max-w-xs sm:text-sm sm:leading-6"
-              onChange={e => handleSelect(e, 6, 41)}
+              onChange={(e) => handleSelect(e, 6, 41)}
             >
               <option value={"choose"}>Choose</option>
               <option value={"1"}>1 Month - Ksh. 22, 940</option>
