@@ -18,7 +18,10 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
     return (
       <div className="w-full flex-1 bg-slate-200 flex justify-center items-center flex-col  px-2 py-2 sm:px-24 sm:py-4">
         <span>Page not found</span>
-        <Link href={"/service/psvBodaboda/thirdParty"} className="my-6 py-4 px-6 text-white bg-[#007A37]">
+        <Link
+          href={"/service/psvBodaboda/thirdParty"}
+          className="my-6 py-4 px-6 text-white bg-[#007A37]"
+        >
           Go Back Home
         </Link>
       </div>
@@ -51,6 +54,10 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
       data.get("logbook") as File
     )) as ArrayBuffer;
 
+    const kraPin = (await readFileAsBase64(
+      data.get("kraPin") as File
+    )) as ArrayBuffer;
+
     const submitObj = {
       name: data.get("fullname"),
       email: data.get("email"),
@@ -61,6 +68,7 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
       provider,
       idCard: Buffer.from(idCard),
       logbook: Buffer.from(logbook),
+      kraPin: Buffer.from(kraPin),
       cost: `Ksh ${cost}`,
     };
 
@@ -229,7 +237,7 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
                         htmlFor="idcard"
                         className="block text-sm font-medium leading-6 text-gray-900"
                       >
-                        Id Card
+                        ID Card
                       </label>
                       <div className="mt-2">
                         <input
@@ -252,6 +260,24 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
                           type="file"
                           name="logbook"
                           id="logbook"
+                          className="w-full rounded-md border border-[#007A37] pl-4 py-2 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-2 focus:border-[#007A37] sm:text-sm sm:leading-6"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-full grid grid-cols-1 my-4">
+                    <div className="input-group">
+                      <label
+                        htmlFor="kraPin"
+                        className="block text-sm font-medium leading-6 text-gray-900"
+                      >
+                        KRA PIN
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          type="file"
+                          name="kraPin"
+                          id="kraPin"
                           className="w-full rounded-md border border-[#007A37] pl-4 py-2 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-2 focus:border-[#007A37] sm:text-sm sm:leading-6"
                         />
                       </div>

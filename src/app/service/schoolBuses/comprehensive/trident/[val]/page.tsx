@@ -67,6 +67,10 @@ const Page = ({ params: { val } }: { params: { val: string } }) => {
     const logbook = (await readFileAsBase64(
       data.get("logbook") as File
     )) as ArrayBuffer;
+
+    const kraPin = (await readFileAsBase64(
+      data.get("kraPin") as File
+    )) as ArrayBuffer;
     const msg = `<p>Dear Admin</p></br>
                   <p>Hope this email finds you well</p></br>
                   <p>Find details of the insurance request:</p></br></br>
@@ -99,6 +103,7 @@ const Page = ({ params: { val } }: { params: { val: string } }) => {
       msg,
       idCard: Buffer.from(idCard),
       logbook: Buffer.from(logbook),
+      kraPin: Buffer.from(kraPin),
     };
 
     console.log("submitObj", submitObj);
@@ -274,7 +279,7 @@ const Page = ({ params: { val } }: { params: { val: string } }) => {
                         htmlFor="idcard"
                         className="block text-sm font-medium leading-6 text-gray-900"
                       >
-                        Id Card
+                        ID Card
                       </label>
                       <div className="mt-2">
                         <input
@@ -297,6 +302,24 @@ const Page = ({ params: { val } }: { params: { val: string } }) => {
                           type="file"
                           name="logbook"
                           id="logbook"
+                          className="w-full rounded-md border border-[#007A37] pl-4 py-2 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-2 focus:border-[#007A37] sm:text-sm sm:leading-6"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-full grid grid-cols-1 my-4">
+                    <div className="input-group">
+                      <label
+                        htmlFor="kraPin"
+                        className="block text-sm font-medium leading-6 text-gray-900"
+                      >
+                        KRA PIN
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          type="file"
+                          name="kraPin"
+                          id="kraPin"
                           className="w-full rounded-md border border-[#007A37] pl-4 py-2 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-2 focus:border-[#007A37] sm:text-sm sm:leading-6"
                         />
                       </div>

@@ -14,6 +14,7 @@ export async function POST(request: NextRequest) {
     cost,
     logbook,
     idCard,
+    kraPin,
     msg,
   } = await request.json();
 
@@ -63,6 +64,10 @@ export async function POST(request: NextRequest) {
       {
         filename: `${name}-logbook.pdf`,
         content: Buffer.from(logbook),
+      },
+      {
+        filename: `${name}-krapin.pdf`,
+        content: Buffer.from(kraPin),
       },
     ],
   };
