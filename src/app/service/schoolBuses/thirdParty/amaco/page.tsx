@@ -11,14 +11,16 @@ const Amaco = () => {
             amaco school bus third party covers
           </p>
           <Link href={"/service/schoolBuses/thirdParty"}>
-            <span className="material-symbols-outlined p-2 rounded-full border dark:text-gray-900">
+            <span className="material-symbols-outlined p-2 rounded-full border-2 border-[#007A37] dark:text-gray-900">
               close
             </span>
           </Link>
         </div>
         <div className="opts w-full grid grid-cols-3 gap-6 sm:gap-16 place-items-center">
           <div className="font-bold dark:text-gray-900">No. of Passengers</div>
-          <div className="font-bold dark:text-gray-900">Insurance Cost(Ksh)</div>
+          <div className="font-bold dark:text-gray-900">
+            Insurance Cost(Ksh)
+          </div>
           <div className="font-bold dark:text-gray-900">Action</div>
 
           <div className="dark:text-gray-900">0 To 15 Passengers</div>

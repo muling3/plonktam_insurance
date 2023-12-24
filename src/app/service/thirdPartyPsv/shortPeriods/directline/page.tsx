@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -120,7 +120,7 @@ const Directline = () => {
             directline psv matatu rates
           </p>
           <Link href={"/service/thirdPartyPsv/shortPeriods"}>
-            <span className="material-symbols-outlined p-2 rounded-full border dark:text-gray-900">
+            <span className="material-symbols-outlined p-2 rounded-full border-2 border-[#007A37] dark:text-gray-900">
               close
             </span>
           </Link>

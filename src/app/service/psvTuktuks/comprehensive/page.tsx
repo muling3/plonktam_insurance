@@ -10,7 +10,7 @@ const Comprehensive = () => {
             comprehensive psv tuktuk annual covers
           </p>
           <Link href={"/service/psvTuktuks"}>
-            <span className="material-symbols-outlined p-2 rounded-full border dark:text-gray-900">
+            <span className="material-symbols-outlined p-2 rounded-full border-2 border-[#007A37] dark:text-gray-900">
               close
             </span>
           </Link>

@@ -9,7 +9,7 @@ const PsvMatatuPlain = () => {
             psv matatu plain annual third party
           </p>
           <Link href={"/"}>
-            <span className="material-symbols-outlined p-2 rounded-full border dark:text-gray-900">
+            <span className="material-symbols-outlined p-2 rounded-full border-2 border-[#007A37] dark:text-gray-900">
               close
             </span>
           </Link>
