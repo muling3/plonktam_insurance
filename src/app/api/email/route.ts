@@ -53,7 +53,7 @@ export async function POST(request: NextRequest) {
 
   const mailOptions: Mail.Options = {
     from: process.env.EMAIL,
-    to: "ndalilapius@gmail.com",
+    to: "plonktaminsuranceagency@gmail.com",
     subject: `Insurance Request From ${name}`,
     html: message,
     attachments: [

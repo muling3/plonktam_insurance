@@ -50,7 +50,7 @@ const Navbar = () => {
           }`}
         >
           <Link href={"/"}>
-            <div className="item flex justify-start w-full py-1 mb-2 text-black hover:bg-gray-100 hover:scale-105 transition-all duration-300 cursor-pointer">
+            <div className="item flex justify-start w-full py-1 mb-2 text-gray-900 dark:text-white hover:bg-gray-100 hover:scale-105 transition-all duration-300 cursor-pointer">
               <span className="icon pr-4">
                 <Image
                   src="/home.svg"
@@ -64,7 +64,7 @@ const Navbar = () => {
             </div>
           </Link>
           <Link href={"/#contact"}>
-            <div className="item flex justify-start w-full py-1 my-2 text-black hover:bg-gray-100 hover:scale-105 transition-all duration-300 cursor-pointer">
+            <div className="item flex justify-start w-full py-1 my-2 text-gray-900 dark:text-white hover:bg-gray-100 hover:scale-105 transition-all duration-300 cursor-pointer">
               <span className="icon pr-4">
                 <Image
                   src="/contact.svg"
@@ -79,7 +79,7 @@ const Navbar = () => {
           </Link>
 
           <Link href={"/#about"} className="w-full">
-            <div className="item flex justify-start w-full py-1 my-2 text-black hover:bg-gray-100 hover:scale-105 transition-all duration-300 cursor-pointer">
+            <div className="item flex justify-start w-full py-1 my-2 text-gray-900 dark:text-white hover:bg-gray-100 hover:scale-105 transition-all duration-300 cursor-pointer">
               <span className="icon pr-4">
                 <Image
                   src="/about.svg"
@@ -92,7 +92,7 @@ const Navbar = () => {
               <span>About Us</span>
             </div>
           </Link>
-          <div className="item flex justify-start w-full py-1 my-2 text-black hover:bg-gray-100 hover:scale-105 transition-all duration-300 cursor-pointer">
+          <div className="item flex justify-start w-full py-1 my-2 text-gray-900 dark:text-white hover:bg-gray-100 hover:scale-105 transition-all duration-300 cursor-pointer">
             <span className="icon pr-4">
               <Image
                 src="/settings.svg"
