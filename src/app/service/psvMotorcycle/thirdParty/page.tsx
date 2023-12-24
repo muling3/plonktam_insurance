@@ -29,7 +29,7 @@ const ThirdParty = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="">3, 700</div>
+          <div className="dark:text-gray-900">3, 700</div>
           <Link href={"/service/psvMotorcycle/thirdParty/trident"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -45,7 +45,7 @@ const ThirdParty = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="">3, 500</div>
+          <div className="dark:text-gray-900">3, 500</div>
           <Link href={"/service/psvMotorcycle/thirdParty/heritage"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -61,7 +61,7 @@ const ThirdParty = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="">4, 200</div>
+          <div className="dark:text-gray-900">4, 200</div>
           <Link href={"/service/psvMotorcycle/thirdParty/monarch"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -77,7 +77,7 @@ const ThirdParty = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="">3, 700</div>
+          <div className="dark:text-gray-900">3, 700</div>
           <Link href={"/service/psvMotorcycle/thirdParty/directline"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select

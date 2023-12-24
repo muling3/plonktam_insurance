@@ -138,10 +138,10 @@ const Directline = () => {
               className="w-full rounded-md border-0 px-4 py-1.5 text-gray-900 shadow-sm sm:max-w-xs sm:text-sm sm:leading-6"
               onChange={(e) => handleSelect(e, 1, 14)}
             >
-              <option value={"choose"}>No Options</option>
-              {/* <option>1 Month - Ksh. 7, 165</option>
-              <option>14 Days - Ksh. 3, 840</option>
-              <option>7 Days - Ksh. 2, 240</option> */}
+              <option value={"choose"}>Choose</option>
+              <option value={"1"}>1 Month - Ksh. 9, 045</option>
+              <option value={"2"}>14 Days - Ksh. 4, 750</option>
+              <option value={"3"}>7 Days - Ksh. 2, 780</option>
             </select>
           </div>
           <Link href={link1}>
@@ -163,9 +163,9 @@ const Directline = () => {
               onChange={(e) => handleSelect(e, 2, 24)}
             >
               <option value={"choose"}>Choose</option>
-              <option value={"1"}>1 Month - Ksh. 9, 005</option>
-              <option value={"2"}>14 Days - Ksh. 6, 350</option>
-              <option value={"3"}>7 Days - Ksh. 3, 700</option>
+              <option value={"1"}>1 Month - Ksh. 11, 475</option>
+              <option value={"2"}>14 Days - Ksh. 6, 250</option>
+              <option value={"3"}>7 Days - Ksh. 3, 630</option>
             </select>
           </div>
           <Link href={link2}>
@@ -187,9 +187,9 @@ const Directline = () => {
               onChange={(e) => handleSelect(e, 3, 25)}
             >
               <option value="choose">Choose</option>
-              <option value="1">1 Month - Ksh. 9, 005</option>
-              <option value="2">14 Days - Ksh. 6, 350</option>
-              <option value="3">7 Days - Ksh. 3, 700</option>
+              <option value="1">1 Month - Ksh. 11, 850</option>
+              <option value="2">14 Days - Ksh. 6, 370</option>
+              <option value="3">7 Days - Ksh. 3, 740</option>
             </select>
           </div>
           <Link href={link3}>
@@ -211,9 +211,9 @@ const Directline = () => {
               onChange={(e) => handleSelect(e, 4, 33)}
             >
               <option value="choose">Choose</option>
-              <option value="1">1 Month - Ksh. 11, 450</option>
-              <option value="2">14 Days - Ksh. 6, 200</option>
-              <option value="3">7 Days - Ksh. 3, 600</option>
+              <option value="1">1 Month - Ksh. 15, 850</option>
+              <option value="2">14 Days - Ksh. 8, 850</option>
+              <option value="3">7 Days - Ksh. 5, 150</option>
             </select>
           </div>
           <Link href={link4}>

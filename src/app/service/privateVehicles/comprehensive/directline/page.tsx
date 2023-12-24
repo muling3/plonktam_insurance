@@ -20,7 +20,7 @@ const Directline = () => {
           <div className="font-bold">Action</div>
 
           <div>Minimum Ksh. 750, 000 </div>
-          <div className="">60, 000</div>
+          <div className="dark:text-gray-900">60, 000</div>
           <Link href={"/service/privateVehicles/comprehensive/directline/1"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select

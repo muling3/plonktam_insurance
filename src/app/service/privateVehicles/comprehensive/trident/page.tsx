@@ -20,7 +20,7 @@ const Trident = () => {
           <div className="font-bold">Action</div>
 
           <div>Below Ksh. 1M upto 15 Years </div>
-          <div className="">30, 000</div>
+          <div className="dark:text-gray-900">30, 000</div>
           <Link
             href={"/service/privateVehicles/comprehensive/trident/below-15"}
           >
@@ -30,7 +30,7 @@ const Trident = () => {
           </Link>
 
           <div>Below Ksh. 1M upto 16 - 20 Years</div>
-          <div className="">30, 000</div>
+          <div className="dark:text-gray-900">30, 000</div>
           <Link
             href={
               "/service/privateVehicles/comprehensive/trident/between-16-20"
@@ -42,7 +42,7 @@ const Trident = () => {
           </Link>
 
           <div>Above Ksh. 1M upto 15 Years </div>
-          <div className="">30, 000</div>
+          <div className="dark:text-gray-900">30, 000</div>
           <Link
             href={"/service/privateVehicles/comprehensive/trident/above-15"}
           >
@@ -52,7 +52,7 @@ const Trident = () => {
           </Link>
 
           <div>Above Ksh. 1M upto 16 - 20 Years</div>
-          <div className="">30, 000</div>
+          <div className="dark:text-gray-900">30, 000</div>
           <Link
             href={"/service/privateVehicles/comprehensive/trident/above-16-20"}
           >

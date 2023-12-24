@@ -29,7 +29,7 @@ const Comprehensive = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="">15, 000</div>
+          <div className="dark:text-gray-900">15, 000</div>
           <Link href={"/service/psvTuktuks/comprehensive/trident"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -45,7 +45,7 @@ const Comprehensive = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="">22, 500</div>
+          <div className="dark:text-gray-900">22, 500</div>
           <Link href={"/service/psvTuktuks/comprehensive/monarch"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select

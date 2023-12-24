@@ -20,7 +20,7 @@ const Amaco = () => {
           <div className="font-bold">Action</div>
 
           <div>Below Ksh. 500, 000 </div>
-          <div className="">38, 000</div>
+          <div className="dark:text-gray-900">38, 000</div>
           <Link href={"/service/privateVehicles/comprehensive/amaco/1"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -28,7 +28,7 @@ const Amaco = () => {
           </Link>
 
           <div>Ksh. 500, 000 To Ksh. 1.5M</div>
-          <div className="">35, 000</div>
+          <div className="dark:text-gray-900">35, 000</div>
           <Link href={"/service/privateVehicles/comprehensive/amaco/2"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -36,7 +36,7 @@ const Amaco = () => {
           </Link>
 
           <div>Ksh. 1.5M To 3M </div>
-          <div className="">34, 000</div>
+          <div className="dark:text-gray-900">34, 000</div>
           <Link href={"/service/privateVehicles/comprehensive/amaco/3"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -44,7 +44,7 @@ const Amaco = () => {
           </Link>
 
           <div>Ksh. 3M And Above</div>
-          <div className="">38, 000</div>
+          <div className="dark:text-gray-900">38, 000</div>
           <Link href={"/service/privateVehicles/comprehensive/amaco/4"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select

@@ -5,9 +5,6 @@ const ThirdParty = () => {
   return (
     <>
       <div className="w-full flex-1 px-2 py-2 sm:px-24 sm:py-4 relative">
-        {/* {open && (
-          <div className="absolute top-0 left-0 right-0 bottom-0 bg-gray-200 opacity-40"></div>
-        )} */}
         <div className="header w-full my-4 flex justify-between items-center flex-wrap">
           <p className="text-lg font-semibold uppercase">
             third party private covers
@@ -32,7 +29,7 @@ const ThirdParty = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="">4, 950</div>
+          <div className="dark:text-gray-900">4, 950</div>
           <Link href={"/service/privateVehicles/thirdParty/trident"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -48,7 +45,7 @@ const ThirdParty = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="">6, 500</div>
+          <div className="dark:text-gray-900">6, 500</div>
           <Link href={"/service/privateVehicles/thirdParty/amaco"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -64,7 +61,7 @@ const ThirdParty = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="">7, 574</div>
+          <div className="dark:text-gray-900">7, 574</div>
           <Link href={"/service/privateVehicles/thirdParty/cic"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -80,7 +77,7 @@ const ThirdParty = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="">8, 450</div>
+          <div className="dark:text-gray-900">8, 450</div>
           <Link href={"/service/privateVehicles/thirdParty/directline"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -96,7 +93,7 @@ const ThirdParty = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="">12, 000</div>
+          <div className="dark:text-gray-900">12, 000</div>
           <Link href={"/service/privateVehicles/thirdParty/jubilee"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -112,7 +109,7 @@ const ThirdParty = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="">7, 574</div>
+          <div className="dark:text-gray-900">7, 574</div>
           <Link href={"/service/privateVehicles/thirdParty/orient"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select

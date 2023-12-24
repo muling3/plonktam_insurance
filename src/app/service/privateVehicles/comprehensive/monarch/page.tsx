@@ -20,7 +20,7 @@ const Monarch = () => {
           <div className="font-bold">Action</div>
 
           <div>Ksh. 500, 000 To 1M</div>
-          <div className="">40, 000</div>
+          <div className="dark:text-gray-900">40, 000</div>
           <Link href={"/service/privateVehicles/comprehensive/monarch/1"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -28,7 +28,7 @@ const Monarch = () => {
           </Link>
 
           <div>Ksh. 1.5M To Ksh. 2M</div>
-          <div className="">39, 000</div>
+          <div className="dark:text-gray-900">39, 000</div>
           <Link href={"/service/privateVehicles/comprehensive/monarch/2"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -36,7 +36,7 @@ const Monarch = () => {
           </Link>
 
           <div>Over Ksh. 2.5M </div>
-          <div className="">40, 000</div>
+          <div className="dark:text-gray-900">40, 000</div>
           <Link href={"/service/privateVehicles/comprehensive/monarch/3"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select

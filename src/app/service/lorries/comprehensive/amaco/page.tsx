@@ -20,7 +20,7 @@ const Amaco = () => {
           <div className="font-bold">Action</div>
 
           <div>Below Ksh. 500, 000(MANDATORY EVALUATION) </div>
-          <div className="">45, 000</div>
+          <div className="dark:text-gray-900">45, 000</div>
           <Link href={"/service/lorries/comprehensive/amaco/1"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -28,7 +28,7 @@ const Amaco = () => {
           </Link>
 
           <div>Ksh. 500, 000 To Ksh. 1M </div>
-          <div className="">50, 000</div>
+          <div className="dark:text-gray-900">50, 000</div>
           <Link href={"/service/lorries/comprehensive/amaco/2"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
@@ -36,7 +36,7 @@ const Amaco = () => {
           </Link>
 
           <div>Over Ksh. 2.5M </div>
-          <div className="">40, 000</div>
+          <div className="dark:text-gray-900">40, 000</div>
           <Link href={"/service/lorries/comprehensive/amaco/3"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
