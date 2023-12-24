@@ -5,9 +5,11 @@ const PrivateVehicles = () => {
     <>
       <div className="w-full flex-1 px-2 py-2 sm:px-24 sm:py-4">
         <div className="header w-full my-4 flex justify-between flex-wrap items-center">
-          <p className="text-lg font-semibold uppercase">Private Vehicles</p>
+          <p className="text-lg font-semibold uppercase dark:text-gray-900">
+            Private Vehicles
+          </p>
           <Link href={"/"}>
-            <span className="material-symbols-outlined p-2 rounded-full border">
+            <span className="material-symbols-outlined p-2 rounded-full border dark:text-gray-900">
               close
             </span>
           </Link>
