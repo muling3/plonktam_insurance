@@ -130,7 +130,7 @@ const Invesco = () => {
           <div className="font-bold">Options</div>
           <div className="font-bold">Action</div>
 
-          <div>14 Seaters</div>
+          <div className="dark:text-gray-900">14 Seaters</div>
           <div className="w-[150px] sm:w-[250px]">
             <select
               id="seaters"
@@ -154,7 +154,7 @@ const Invesco = () => {
             </div>
           </Link>
 
-          <div>18 Seaters</div>
+          <div className="dark:text-gray-900">18 Seaters</div>
           <div className="w-[150px] sm:w-[250px]">
             <select
               id="seaters"
@@ -178,7 +178,7 @@ const Invesco = () => {
             </div>
           </Link>
 
-          <div>26 Seaters</div>
+          <div className="dark:text-gray-900">26 Seaters</div>
           <div className="w-[150px] sm:w-[250px]">
             <select
               id="seaters"
@@ -202,7 +202,7 @@ const Invesco = () => {
             </div>
           </Link>
 
-          <div>33 Seaters</div>
+          <div className="dark:text-gray-900">33 Seaters</div>
           <div className="w-[150px] sm:w-[250px]">
             <select
               id="seaters"
@@ -226,7 +226,7 @@ const Invesco = () => {
             </div>
           </Link>
 
-          <div>37 Seaters</div>
+          <div className="dark:text-gray-900">37 Seaters</div>
           <div className="w-[150px] sm:w-[250px]">
             <select
               id="seaters"
@@ -250,7 +250,7 @@ const Invesco = () => {
             </div>
           </Link>
 
-          <div>41 Seaters</div>
+          <div className="dark:text-gray-900">41 Seaters</div>
           <div className="w-[150px] sm:w-[250px]">
             <select
               id="seaters"
@@ -274,7 +274,7 @@ const Invesco = () => {
             </div>
           </Link>
 
-          <div>46 Seaters</div>
+          <div className="dark:text-gray-900">46 Seaters</div>
           <div className="w-[150px] sm:w-[250px]">
             <select
               id="seaters"

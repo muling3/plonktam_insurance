@@ -21,48 +21,48 @@ const Invesco = () => {
           <div className="font-bold">Cost (Ksh)</div>
           <div className="font-bold">Action</div>
 
-          <div>14 Seats</div>
-          <div className="">86, 980</div>
+          <div className="dark:text-gray-900">14 Seats</div>
+          <div className="dark:text-gray-900">86, 980</div>
           <Link href={"/service/thirdPartyPsv/annual/invesco/1"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
             </div>
           </Link>
 
-          <div>18 Seats</div>
-          <div className="">99, 980</div>
+          <div className="dark:text-gray-900">18 Seats</div>
+          <div className="dark:text-gray-900">99, 980</div>
           <Link href={"/service/thirdPartyPsv/annual/invesco/2"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
             </div>
           </Link>
 
-          <div>26 Seats</div>
-          <div className="">121, 420</div>
+          <div className="dark:text-gray-900">26 Seats</div>
+          <div className="dark:text-gray-900">121, 420</div>
           <Link href={"/service/thirdPartyPsv/annual/invesco/3"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
             </div>
           </Link>
 
-          <div>33 Seats</div>
-          <div className="">136, 952</div>
+          <div className="dark:text-gray-900">33 Seats</div>
+          <div className="dark:text-gray-900">136, 952</div>
           <Link href={"/service/thirdPartyPsv/annual/invesco/4"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
             </div>
           </Link>
 
-          <div>37 Seats</div>
-          <div className="">193, 252</div>
+          <div className="dark:text-gray-900">37 Seats</div>
+          <div className="dark:text-gray-900">193, 252</div>
           <Link href={"/service/thirdPartyPsv/annual/invesco/5"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
             </div>
           </Link>
 
-          <div>41 Seats</div>
-          <div className="">209, 738</div>
+          <div className="dark:text-gray-900">41 Seats</div>
+          <div className="dark:text-gray-900">209, 738</div>
           <Link href={"/service/thirdPartyPsv/annual/invesco/6"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select

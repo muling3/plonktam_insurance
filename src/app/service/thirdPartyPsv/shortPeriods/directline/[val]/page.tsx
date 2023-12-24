@@ -10,19 +10,23 @@ const providers: {
 } = {
   "1": {
     cat: "14 Seaters",
-    durations: [],
+    durations: [
+      { name: "1 Month - Ksh. 9, 045" },
+      { name: "14 Days - Ksh. 4, 750" },
+      { name: "7 Days - Ksh. 2, 780" },
+    ],
   },
   "2": {
     cat: "24 Seaters",
     durations: [
       {
-        name: "1 Month - Ksh. 9, 005",
+        name: "1 Month - Ksh. 11, 475",
       },
       {
-        name: "14 Days - Ksh. 6, 350",
+        name: "14 Days - Ksh. 6, 250",
       },
       {
-        name: "7 Days - Ksh. 3, 700",
+        name: "7 Days - Ksh. 3, 630",
       },
     ],
   },
@@ -30,13 +34,13 @@ const providers: {
     cat: "25 Seaters",
     durations: [
       {
-        name: "1 Month - Ksh. 9, 005",
+        name: "1 Month - Ksh. 11, 850",
       },
       {
-        name: "14 Days - Ksh. 6, 350",
+        name: "14 Days - Ksh. 6, 370",
       },
       {
-        name: "7 Days - Ksh. 3, 700",
+        name: "7 Days - Ksh. 3, 740",
       },
     ],
   },
@@ -44,13 +48,13 @@ const providers: {
     cat: "33 Seaters",
     durations: [
       {
-        name: "1 Month - Ksh. 11, 450",
+        name: "1 Month - Ksh. 15, 850",
       },
       {
-        name: "14 Days - Ksh. 6, 200",
+        name: "14 Days - Ksh. 8, 850",
       },
       {
-        name: "7 Days - Ksh. 3, 600",
+        name: "7 Days - Ksh. 5, 150",
       },
     ],
   },

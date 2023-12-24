@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 
@@ -22,47 +22,47 @@ const Xplico = () => {
           <div className="font-bold">Action</div>
 
           <div>14 Seats</div>
-          <div className="">73, 200</div>
+          <div className="dark:text-gray-900">73, 200</div>
           <Link href={"/service/thirdPartyPsv/annual/xplico/1"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
             </div>
           </Link>
 
-          <div>18 Seats</div>
-          <div className="">94, 300</div>
+          <div className="dark:text-gray-900">18 Seats</div>
+          <div className="dark:text-gray-900">94, 300</div>
           <Link href={"/service/thirdPartyPsv/annual/xplico/2"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
             </div>
           </Link>
 
-          <div>25 Seats</div>
-          <div className="">98, 420</div>
+          <div className="dark:text-gray-900">25 Seats</div>
+          <div className="dark:text-gray-900">98, 420</div>
           <Link href={"/service/thirdPartyPsv/annual/xplico/3"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
             </div>
           </Link>
 
-          <div>33 Seats</div>
-          <div className="">121, 952</div>
+          <div className="dark:text-gray-900">33 Seats</div>
+          <div className="dark:text-gray-900">121, 952</div>
           <Link href={"/service/thirdPartyPsv/annual/xplico/4"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
             </div>
           </Link>
 
-          <div>37 Seats</div>
-          <div className="">151, 252</div>
+          <div className="dark:text-gray-900">37 Seats</div>
+          <div className="dark:text-gray-900">151, 252</div>
           <Link href={"/service/thirdPartyPsv/annual/xplico/5"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
             </div>
           </Link>
 
-          <div>41 Seats</div>
-          <div className="">181, 200</div>
+          <div className="dark:text-gray-900">41 Seats</div>
+          <div className="dark:text-gray-900">181, 200</div>
           <Link href={"/service/thirdPartyPsv/annual/xplico/6"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select

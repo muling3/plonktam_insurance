@@ -16,7 +16,6 @@ const FooterSection = () => {
           <Image
             src="/logo.svg"
             alt="Plonktam logo"
-            className="dark:invert"
             width={200}
             height={400}
             priority
@@ -28,7 +27,7 @@ const FooterSection = () => {
               <Image
                 src={`/${sl.svg}.svg`}
                 alt={sl.title}
-                className="dark:invert mr-2"
+                className="mr-2"
                 width={42}
                 height={32}
                 priority

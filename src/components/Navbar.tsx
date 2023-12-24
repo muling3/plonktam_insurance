@@ -40,7 +40,6 @@ const Navbar = () => {
             ref={menuIconRef}
             src="/menu.svg"
             alt="Plonktam logo"
-            className="dark:invert"
             width={32}
             height={32}
             priority
@@ -57,7 +56,6 @@ const Navbar = () => {
                 <Image
                   src="/home.svg"
                   alt="Home icon"
-                  className="dark:invert"
                   width={32}
                   height={32}
                   priority
@@ -72,7 +70,6 @@ const Navbar = () => {
                 <Image
                   src="/contact.svg"
                   alt="Contact us icon"
-                  className="dark:invert"
                   width={30}
                   height={30}
                   priority
@@ -88,7 +85,6 @@ const Navbar = () => {
                 <Image
                   src="/about.svg"
                   alt="About us icon"
-                  className="dark:invert"
                   width={32}
                   height={32}
                   priority
@@ -102,7 +98,6 @@ const Navbar = () => {
               <Image
                 src="/settings.svg"
                 alt="Settings icon"
-                className="dark:invert"
                 width={32}
                 height={32}
                 priority
