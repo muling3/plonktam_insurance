@@ -24,7 +24,6 @@ const Navbar = () => {
           <Image
             src="/logo.svg"
             alt="Plonktam logo"
-            className="dark:invert"
             width={200}
             height={400}
             priority
