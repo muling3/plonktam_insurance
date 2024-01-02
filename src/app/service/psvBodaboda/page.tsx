@@ -15,7 +15,7 @@ const PsvBodaboda = () => {
           </Link>
         </div>
         <div className="opts w-full text-white">
-          <Link href={"/service/psvBodaboda"}>
+          <Link href={"/service/psvBodaboda/thirdParty"}>
             <div className="header bg-[#007A37] flex items-center justify-start w-full py-2 rounded-lg my-3">
               <div className="text-center">
                 <span
