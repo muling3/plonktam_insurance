@@ -44,39 +44,49 @@ export async function POST(request: NextRequest) {
                   `;
 
   const transport = nodemailer.createTransport({
-    service: "gmail",
+    host: process.env.MAIL_HOST,
+    port: process.env.MAIL_PORT,
+    secureConnection: false,
     auth: {
-      user: process.env.EMAIL,
-      pass: process.env.PASS,
+      user: process.env.SENDER_EMAIL,
+      pass: process.env.SENDER_EMAIL_PASS,
+    },
+    tls: {
+      ciphers: "SSLv3",
     },
   });
 
+  let attachments: Mail.Attachment[] = [];
+  idCard &&
+    attachments.push({
+      filename: `${name}-id-card`,
+      content: Buffer.from(idCard),
+    });
+
+  logbook &&
+    attachments.push({
+      filename: `${name}-logbook.pdf`,
+      content: Buffer.from(logbook),
+    });
+
+  kraPin && attachments.push(kraPin);
+
   const mailOptions: Mail.Options = {
-    from: process.env.EMAIL,
-    to: "plonktaminsuranceagency@gmail.com",
+    from: {
+      name: `${name}`,
+      address: process.env.SENDER_EMAIL as string,
+    },
+    to: process.env.BUSINESS_EMAIL,
     subject: `Insurance Request From ${name}`,
     html: message,
-    attachments: [
-      {
-        filename: `${name}-id-card`,
-        content: Buffer.from(idCard),
-      },
-      {
-        filename: `${name}-logbook.pdf`,
-        content: Buffer.from(logbook),
-      },
-      {
-        filename: `${name}-krapin.pdf`,
-        content: Buffer.from(kraPin),
-      },
-    ],
+    attachments,
   };
 
   const sendMailPromise = () =>
     new Promise<string>((resolve, reject) => {
       transport.sendMail(mailOptions, function (err) {
         if (!err) {
-          resolve("Email sent");
+          resolve("Message was sent successfully");
         } else {
           console.log("error ", err);
           reject(`ERROR Encountered: ${err}`);
@@ -85,9 +95,12 @@ export async function POST(request: NextRequest) {
     });
 
   try {
-    // await sendMailPromise();
-    return NextResponse.json({ message: "Email was sent successfully" });
+    await sendMailPromise();
+    return NextResponse.json({ message: "Message was sent successfully" });
   } catch (err) {
-    return NextResponse.json({ error: err }, { status: 500 });
+    return NextResponse.json(
+      { message: "Failed to send message. Kindly try again later" },
+      { status: 500 }
+    );
   }
 }

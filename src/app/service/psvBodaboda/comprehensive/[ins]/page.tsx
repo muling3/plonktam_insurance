@@ -82,6 +82,7 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
     })
       .then((res) => res.json())
       .then((response) => {
+        console.log("reposne text", response);
         setOpen(true);
         setResponseText(response.message);
 
