@@ -106,9 +106,9 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
         <div className={`bg-slate-300 px-2 py-2 sm:px-32 sm:py-4`}>
           <div className="header w-full py-1 flex justify-between items-center">
             <Link href={"/service/privateVehicles/thirdParty"}>
-              <span className="material-symbols-outlined p-2 rounded-full border">
-                close
-              </span>
+              <span className="material-symbols-outlined p-2 rounded-full border-2 border-[#007A37] dark:text-gray-900">
+              close
+            </span>
             </Link>
             <div className="image w-[80px] h-[60px] relative">
               <Image src="/mpesa.png" alt={"Mpesa till"} fill />

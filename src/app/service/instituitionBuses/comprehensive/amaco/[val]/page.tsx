@@ -129,7 +129,7 @@ const Page = ({ params: { val } }: { params: { val: string } }) => {
         <div className={`bg-slate-300 px-2 py-2 sm:px-32 sm:py-4`}>
           <div className="header w-full py-1 flex justify-between items-center">
             <Link href={"/service/instituitionBuses/comprehensive/amaco"}>
-              <span className="material-symbols-outlined p-2 rounded-full border">
+              <span className="material-symbols-outlined p-2 rounded-full border-2 border-[#007A37] dark:text-gray-900">
                 close
               </span>
             </Link>
