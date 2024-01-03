@@ -125,8 +125,8 @@ const Page = ({ params: { val } }: { params: { val: string } }) => {
         }, 200);
       })
       .catch((err) => {
-        setOpen(true);
-        setResponseText(err);
+        setOpen(false);
+        setResponseText(err.message);
       });
   };
 

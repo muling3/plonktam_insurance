@@ -16,7 +16,6 @@ const Directline = () => {
     // prevent default
     e.preventDefault();
 
-    setOpen(true);
     switch (from) {
       case 1:
         e.target.value != "choose"

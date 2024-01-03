@@ -92,8 +92,8 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
         }, 200);
       })
       .catch((err) => {
-        setOpen(true);
-        setResponseText(err);
+        setOpen(false);
+        setResponseText(err.message);
       });
   };
 
