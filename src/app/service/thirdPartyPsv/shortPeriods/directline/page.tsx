@@ -13,7 +13,10 @@ const Directline = () => {
   const [link7, setLink7] = useState<string>("");
 
   const handleSelect = (e: any, from: number, seaters: number) => {
+    // prevent default
     e.preventDefault();
+
+    setOpen(true);
     switch (from) {
       case 1:
         e.target.value != "choose"

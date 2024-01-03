@@ -1,6 +1,7 @@
 import { type NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import Mail from "nodemailer/lib/mailer";
+import SMTPTransport from "nodemailer/lib/smtp-transport";
 
 export async function POST(request: NextRequest) {
   const {
@@ -43,10 +44,10 @@ export async function POST(request: NextRequest) {
                   <p>Plonktam Mailing Team</p>
                   `;
 
-  const transport = nodemailer.createTransport({
+  const transportOpts: SMTPTransport.Options = {
     host: process.env.MAIL_HOST,
-    port: process.env.MAIL_PORT,
-    secureConnection: false,
+    port: parseInt(process.env.MAIL_PORT as string),
+    // secure: false,
     auth: {
       user: process.env.SENDER_EMAIL,
       pass: process.env.SENDER_EMAIL_PASS,
@@ -54,7 +55,8 @@ export async function POST(request: NextRequest) {
     tls: {
       ciphers: "SSLv3",
     },
-  });
+  };
+  const transport = nodemailer.createTransport(transportOpts);
 
   let attachments: Mail.Attachment[] = [];
   idCard &&
@@ -74,7 +76,7 @@ export async function POST(request: NextRequest) {
   const mailOptions: Mail.Options = {
     from: {
       name: `${name}`,
-      address: process.env.SENDER_EMAIL as string,
+      address: process.env.SENDER_EMAI as string,
     },
     to: process.env.BUSINESS_EMAIL,
     subject: `Insurance Request From ${name}`,
@@ -89,15 +91,16 @@ export async function POST(request: NextRequest) {
           resolve("Message was sent successfully");
         } else {
           console.log("error ", err);
-          reject(`ERROR Encountered: ${err}`);
+          reject("Failed to send message. Kindly try again later");
         }
       });
     });
 
   try {
-    // await sendMailPromise();
-    return NextResponse.json({ message: "Message was sent successfully" });
+    const response = await sendMailPromise();
+    return NextResponse.json({ message: response });
   } catch (err) {
+    console.log("error occurred ", err);
     return NextResponse.json(
       { message: "Failed to send message. Kindly try again later" },
       { status: 500 }

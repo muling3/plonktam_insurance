@@ -64,7 +64,10 @@ const Page = ({ params: { val } }: { params: { val: string } }) => {
 
   const handleSendEmail = async (e: FormEvent<HTMLFormElement>) => {
     // prevent default
+    // prevent default
     e.preventDefault();
+
+    setOpen(true);
 
     let data = new FormData(formRef.current!);
     const idCard = (await readFileAsBase64(
@@ -124,7 +127,6 @@ const Page = ({ params: { val } }: { params: { val: string } }) => {
     })
       .then((res) => res.json())
       .then((response) => {
-        setOpen(true);
         setResponseText(response.message);
 
         formRef.current?.reset();
