@@ -117,7 +117,7 @@ const Page = ({ params: { val } }: { params: { val: string } }) => {
       kraPin: Buffer.from(kraPin),
     };
 
-    console.log("submitObj", submitObj);
+    // console.log("submitObj", submitObj);
 
     fetch("/api/email", {
       method: "POST",
@@ -147,21 +147,6 @@ const Page = ({ params: { val } }: { params: { val: string } }) => {
 
   return (
     <>
-      <div
-        className={`absolute ${
-          open ? "top-10 sm:top-0" : "top-[-100px]"
-        } z-50 flex w-full justify-center items-center px-2 py-2 duration-500`}
-      >
-        <div className="header w-full sm:w-1/3 flex justify-between items-center bg-[#007A37] sm:bg-slate-300 px-2 py-2 mx-2">
-          <p className="text-white sm:text-gray-900">{responseText}</p>
-          <span
-            className="material-symbols-outlined p-1 rounded-full border cursor-pointer"
-            onClick={(e) => setOpen(false)}
-          >
-            close
-          </span>
-        </div>
-      </div>
       <div className="w-full flex-1 px-2 py-2 sm:px-24 sm:py-4">
         <div className={`bg-slate-300 px-2 py-2 sm:px-32 sm:py-4`}>
           <div className="header w-full py-1 flex justify-between items-center">
@@ -334,12 +319,19 @@ const Page = ({ params: { val } }: { params: { val: string } }) => {
                       </div>
                     </div>
                   </div>
-                  <div className="w-full flex justify-center items-center">
+                  <span className="text-red-500 text-xl">{responseText}</span>
+                  <div className="w-full flex justify-center items-center mt-4">
                     <input
                       type="submit"
-                      value={"Confirm Submission"}
-                      className="bg-[#007A37] text-white py-3 px-6 rounded-[80px] hover:cursor-pointer"
+                      value={open ? "Submitting...." : "Confirm Submission"}
+                      className="bg-[#007A37] text-white py-3 px-6 rounded-[80px] hover:cursor-pointer disabled:cursor-not-allowed disabled:bg-gray-500"
+                      disabled={open}
                     />
+                    {open && (
+                      <div className="image w-[80px] h-[45px] relative bg-slate-300 ml-3">
+                        <Image src="/spinner.svg" alt={"Spinner"} fill />
+                      </div>
+                    )}
                   </div>
                 </form>
               </div>

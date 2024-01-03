@@ -95,7 +95,7 @@ export async function POST(request: NextRequest) {
     });
 
   try {
-    await sendMailPromise();
+    // await sendMailPromise();
     return NextResponse.json({ message: "Message was sent successfully" });
   } catch (err) {
     return NextResponse.json(
