@@ -230,7 +230,7 @@ const Page = ({ params: { val } }: { params: { val: string } }) => {
 
         setTimeout(() => {
           setOpen(false);
-        }, 10000);
+        }, 200);
       })
       .catch((err) => {
         setOpen(true);
