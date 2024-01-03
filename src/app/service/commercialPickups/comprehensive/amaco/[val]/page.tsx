@@ -48,7 +48,6 @@ const Page = ({ params: { val } }: { params: { val: string } }) => {
 
   const handleSendEmail = async (e: FormEvent<HTMLFormElement>) => {
     // prevent default
-    // prevent default
     e.preventDefault();
 
     setOpen(true);
