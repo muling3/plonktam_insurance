@@ -107,8 +107,8 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
           <div className="header w-full py-1 flex justify-between items-center">
             <Link href={"/service/privateVehicles/thirdParty"}>
               <span className="material-symbols-outlined p-2 rounded-full border-2 border-[#007A37] dark:text-gray-900">
-              close
-            </span>
+                close
+              </span>
             </Link>
             <div className="image w-[80px] h-[60px] relative">
               <Image src="/mpesa.png" alt={"Mpesa till"} fill />
@@ -235,6 +235,7 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
                           name="idcard"
                           id="idcard"
                           className="w-full rounded-md border border-[#007A37] pl-4 py-2 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-2 focus:border-[#007A37] sm:text-sm sm:leading-6"
+                          accept="application/pdf"
                         />
                       </div>
                     </div>
@@ -251,6 +252,7 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
                           name="logbook"
                           id="logbook"
                           className="w-full rounded-md border border-[#007A37] pl-4 py-2 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-2 focus:border-[#007A37] sm:text-sm sm:leading-6"
+                          accept="application/pdf"
                         />
                       </div>
                     </div>
@@ -269,6 +271,7 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
                           name="kraPin"
                           id="kraPin"
                           className="w-full rounded-md border border-[#007A37] pl-4 py-2 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-2 focus:border-[#007A37] sm:text-sm sm:leading-6"
+                          accept="application/pdf"
                         />
                       </div>
                     </div>

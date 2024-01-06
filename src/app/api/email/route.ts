@@ -60,23 +60,31 @@ export async function POST(request: NextRequest) {
 
   let attachments: Mail.Attachment[] = [];
   idCard &&
+    Buffer.from(idCard).length &&
     attachments.push({
-      filename: `${name}-id-card`,
+      filename: `${name}-id-card.pdf`,
       content: Buffer.from(idCard),
+      contentType: "application/pdf",
     });
 
   logbook &&
+    Buffer.from(logbook).length &&
     attachments.push({
       filename: `${name}-logbook.pdf`,
       content: Buffer.from(logbook),
     });
 
-  kraPin && attachments.push(kraPin);
+  kraPin &&
+    Buffer.from(kraPin).length &&
+    attachments.push({
+      filename: `${name}-kraPin.pdf`,
+      content: Buffer.from(kraPin),
+    });
 
   const mailOptions: Mail.Options = {
     from: {
       name: `${name}`,
-      address: process.env.SENDER_EMAI as string,
+      address: process.env.SENDER_EMAIL as string,
     },
     to: process.env.BUSINESS_EMAIL,
     subject: `Insurance Request From ${name}`,

@@ -231,6 +231,7 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
                           name="idcard"
                           id="idcard"
                           className="w-full rounded-md border border-[#007A37] pl-4 py-2 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-2 focus:border-[#007A37] sm:text-sm sm:leading-6"
+                          accept="application/pdf"
                         />
                       </div>
                     </div>
@@ -247,6 +248,7 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
                           name="logbook"
                           id="logbook"
                           className="w-full rounded-md border border-[#007A37] pl-4 py-2 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-2 focus:border-[#007A37] sm:text-sm sm:leading-6"
+                          accept="application/pdf"
                         />
                       </div>
                     </div>
@@ -265,6 +267,7 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
                           name="kraPin"
                           id="kraPin"
                           className="w-full rounded-md border border-[#007A37] pl-4 py-2 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-2 focus:border-[#007A37] sm:text-sm sm:leading-6"
+                          accept="application/pdf"
                         />
                       </div>
                     </div>
