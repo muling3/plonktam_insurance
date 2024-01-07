@@ -4,48 +4,22 @@ import Mail from "nodemailer/lib/mailer";
 import SMTPTransport from "nodemailer/lib/smtp-transport";
 
 export async function POST(request: NextRequest) {
-  const {
-    name,
-    email,
-    phone,
-    location,
-    category,
-    service,
-    provider,
-    cost,
-    logbook,
-    idCard,
-    kraPin,
-    msg,
-  } = await request.json();
+  const { name, email, msg } = await request.json();
 
   const message = msg
     ? msg
     : `<p>Dear Admin</p></br>
                   <p>Hope this email finds you well</p></br>
-                  <p>Find details of the insurance request:</p></br></br>
-                  <h2>Requester Details</h2>
+                  <p>Find Application message from:</p></br></br>
                   <ol>
                     <li>Name: <b>${name}</b></li>
                     <li>Email: <b>${email}</b></li>
-                    <li>Phone: <b>${phone}</b></li>
-                    <li>Location: <b>${location}</b></li>
-                  </ol></br></br>
-                  <h2>Insurance Details</h2>
-                  <ol>
-                    <li>Service Name: <b>${service}</b></li>
-                    <li>Category: <b>${category}</b></li>
-                    <li>Provider: <b>${provider}</b></li>
-                    <li>Cost: <b>${cost}</b></li>
+                    <li>Message: <b>${msg}</b></li>
                   </ol></br></br>
 
-                  <p>Find attached the requester documents for your inspection</p></br></br>
                   <p>Kind regards</p>
                   <p>Plonktam Mailing Team</p>
                   `;
-
-  // cuzaticble2v.eu-central-1
-  // NPsdUavyJcfnE6BhQ5WD
 
   const transportOpts: SMTPTransport.Options = {
     host: process.env.MAIL_HOST,
@@ -61,38 +35,14 @@ export async function POST(request: NextRequest) {
   };
   const transport = nodemailer.createTransport(transportOpts);
 
-  let attachments: Mail.Attachment[] = [];
-  idCard &&
-    Buffer.from(idCard).length &&
-    attachments.push({
-      filename: `${name}-id-card.pdf`,
-      content: Buffer.from(idCard),
-      contentType: "application/pdf",
-    });
-
-  logbook &&
-    Buffer.from(logbook).length &&
-    attachments.push({
-      filename: `${name}-logbook.pdf`,
-      content: Buffer.from(logbook),
-    });
-
-  kraPin &&
-    Buffer.from(kraPin).length &&
-    attachments.push({
-      filename: `${name}-kraPin.pdf`,
-      content: Buffer.from(kraPin),
-    });
-
   const mailOptions: Mail.Options = {
     from: {
       name: `${name}`,
       address: process.env.SENDER_EMAIL as string,
     },
     to: process.env.BUSINESS_EMAIL,
-    subject: `Insurance Request From ${name}`,
+    subject: `Application Message From ${name}`,
     html: message,
-    attachments,
   };
 
   const sendMailPromise = () =>
