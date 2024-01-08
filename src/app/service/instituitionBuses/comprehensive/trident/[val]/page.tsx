@@ -61,6 +61,9 @@ const Page = ({ params: { val } }: { params: { val: string } }) => {
     setOpen(true);
 
     let data = new FormData(formRef.current!);
+    const idContentType = (data.get("idcard") as File).type;
+    const logbookContentType = (data.get("logbook") as File).type;
+    const kraContentType = (data.get("kraPin") as File).type;
     const idCard = (await readFileAsBase64(
       data.get("idcard") as File
     )) as ArrayBuffer;
@@ -106,6 +109,9 @@ const Page = ({ params: { val } }: { params: { val: string } }) => {
       idCard: Buffer.from(idCard),
       logbook: Buffer.from(logbook),
       kraPin: Buffer.from(kraPin),
+      idContentType,
+      logbookContentType,
+      kraContentType,
     };
 
     // console.log("submitObj", submitObj);
