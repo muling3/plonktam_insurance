@@ -17,6 +17,9 @@ export async function POST(request: NextRequest) {
     idCard,
     kraPin,
     msg,
+    idContentType,
+    logbookContentType,
+    kraContentType,
   } = await request.json();
 
   const message = msg
@@ -62,25 +65,26 @@ export async function POST(request: NextRequest) {
   const transport = nodemailer.createTransport(transportOpts);
 
   let attachments: Mail.Attachment[] = [];
-  idCard &&
-    Buffer.from(idCard).length &&
+
+  idContentType !== "application/octet-stream" &&
+    idCard &&
     attachments.push({
-      filename: `${name}-id-card.pdf`,
+      filename: `${name}-id-card.${idContentType.split("/")[1]}`,
       content: Buffer.from(idCard),
-      contentType: "application/pdf",
+      contentType: idContentType,
     });
 
-  logbook &&
-    Buffer.from(logbook).length &&
+  logbookContentType !== "application/octet-stream" &&
+    logbook &&
     attachments.push({
-      filename: `${name}-logbook.pdf`,
+      filename: `${name}-logbook.${logbookContentType.split("/")[1]}`,
       content: Buffer.from(logbook),
     });
 
-  kraPin &&
-    Buffer.from(kraPin).length &&
+  kraContentType !== "application/octet-stream" &&
+    kraPin &&
     attachments.push({
-      filename: `${name}-kraPin.pdf`,
+      filename: `${name}-kraPin.${kraContentType.split("/")[1]}`,
       content: Buffer.from(kraPin),
     });
 
