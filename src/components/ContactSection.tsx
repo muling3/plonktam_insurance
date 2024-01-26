@@ -9,16 +9,12 @@ const ContactSection = () => {
   const [open, setOpen] = useState<boolean>(false);
 
   const handleSendEmail = async (e: FormEvent<HTMLFormElement>) => {
-    console.log("i was invocked");
     // prevent default
     e.preventDefault();
 
     setOpen(true);
 
     let data = new FormData(formRef.current!);
-    const idContentType = (data.get("idcard") as File).type;
-    const logbookContentType = (data.get("logbook") as File).type;
-    const kraContentType = (data.get("kraPin") as File).type;
 
     const submitObj = {
       name: data.get("fullname"),
