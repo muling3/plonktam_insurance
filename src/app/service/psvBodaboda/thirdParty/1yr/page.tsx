@@ -30,7 +30,7 @@ const OneYear = () => {
             />
           </div>
           <div className="dark:text-gray-900">3, 500</div>
-          <Link href={"/service/psvBodaboda/thirdParty/1yr"}>
+          <Link href={"/service/psvBodaboda/thirdParty/1yr/trident"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
             </div>
@@ -46,7 +46,7 @@ const OneYear = () => {
             />
           </div>
           <div className="dark:text-gray-900">4, 500</div>
-          <Link href={"/service/psvBodaboda/thirdParty/1yr"}>
+          <Link href={"/service/psvBodaboda/thirdParty/1yr/directline"}>
             <div className="bg-[#007A37] text-white text-xs sm:text-base px-4 py-4 sm:px-4 sm:py-2 uppercase rounded-md">
               select
             </div>

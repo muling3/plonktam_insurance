@@ -5,12 +5,11 @@ import Link from "next/link";
 import { FormEvent, useRef, useState } from "react";
 
 const providers: { [k: string]: string } = {
-  trident: "3, 700",
-  directline: "4, 500",
+  trident: "1, 700",
 };
 
 const Page = ({ params: { ins } }: { params: { ins: string } }) => {
-  const category = "Third Party Annual Covers";
+  const category = "Third Party 1 Month Covers";
   const provider = ins.toUpperCase();
   const cost: string = providers[ins];
 
@@ -68,7 +67,7 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
       email: data.get("email"),
       phone: data.get("phone"),
       location: data.get("location"),
-      service: "PSV BodaBoda",
+      service: "PSV Bodaboda",
       category,
       provider,
       idCard: Buffer.from(idCard),
@@ -91,7 +90,7 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
       .then((response) => {
         setResponseText(response.message);
 
-        formRef.current?.reset(); // reset form
+        formRef.current?.reset();
 
         setTimeout(() => {
           setOpen(false);
@@ -108,7 +107,7 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
       <div className="w-full flex-1 px-2 py-2 sm:px-24 sm:py-4">
         <div className={`bg-slate-300 px-2 py-2 sm:px-32 sm:py-4`}>
           <div className="header w-full py-1 flex justify-between items-center">
-            <Link href={"/service/psvBodaboda/thirdParty"}>
+            <Link href={"/service/psvBodaboda/thirdParty/1m"}>
               <span className="material-symbols-outlined p-2 rounded-full border-2 border-[#007A37] dark:text-gray-900">
                 close
               </span>
@@ -124,7 +123,7 @@ const Page = ({ params: { ins } }: { params: { ins: string } }) => {
               </p>
               <p className="font-semibold text-gray-300 grid grid-cols-2 gap-2 my-2">
                 Service:
-                <span className="font-bold text-white">PSV Bodaboda</span>
+                <span className="font-bold text-white">PSV BodaBoda</span>
               </p>
               <p className="font-semibold text-gray-300 grid grid-cols-2 gap-2 my-2">
                 Category:
